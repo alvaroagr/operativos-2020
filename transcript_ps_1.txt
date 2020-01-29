@@ -1,0 +1,967 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20200129094034
+Nombre de usuario: DESKTOP-PJA6I75\alvaro
+Usuario RunAs: DESKTOP-PJA6I75\alvaro
+Nombre de la configuración: 
+Máquina: DESKTOP-PJA6I75 (Microsoft Windows NT 10.0.18362.0)
+Aplicación host: C:\Windows\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Id. de proceso: 9056
+PSVersion: 5.1.18362.145
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.18362.145
+BuildVersion: 10.0.18362.145
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\alvaro\Documents\PowerShell_transcript.DESKTOP-PJA6I75.gE28xc_J.20200129094034.txt
+PS C:\Windows\system32> help *html*
+
+NOMBRE
+    ConvertTo-Html
+
+SINOPSIS
+    Converts Microsoft .NET Framework objects into HTML that can be displayed in a Web
+    browser.
+
+
+SINTAXIS
+    ConvertTo-Html [[-Property] <Object[]>] [[-Head] <String[]>] [[-Title] <String>]
+    [[-Body] <String[]>] [-As {Table | List}] [-CssUri <Uri>] [-InputObject <PSObject>]
+    [-PostContent <String[]>] [-PreContent <String[]>] [<CommonParameters>]
+
+    ConvertTo-Html [[-Property] <Object[]>] [-As {Table | List}] [-Fragment] [-InputObject
+    <PSObject>] [-PostContent <String[]>] [-PreContent <String[]>] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The ConvertTo-Html cmdlet converts .NET Framework objects into HTML that can be
+    displayed in a Web browser. You can use this cmdlet to display the output of a command
+    in a Web page.
+
+    You can use the parameters of ConvertTo-Html to select object properties, to specify a
+    table or list format, to specify the HTML page title, to add text before and after the
+    object, and to return only the table or list fragment, instead of a strict DTD page.
+
+    When you submit multiple objects to ConvertTo-Html , Windows PowerShell creates the
+    table (or list) based on the properties of the first object that you submit. If the
+    remaining objects do not have one of the specified properties, the property value of
+    that object is an empty cell. If the remaining objects have additional properties,
+    those property values are not included in the file.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821758
+    ConvertTo-Csv
+    ConvertTo-Json
+    ConvertTo-Xml
+    Export-Clixml
+    Import-Clixml
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help ConvertTo-Html -examples".
+    Para obtener más información, escriba: "get-help ConvertTo-Html -detailed".
+    Para obtener información técnica, escriba: "get-help ConvertTo-Html -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help ConvertTo-Html -online"
+
+
+PS C:\Windows\system32> help *printer*
+
+Name                              Category  Module                    Synopsis
+----                              --------  ------                    --------
+Out-Printer                       Cmdlet    Microsoft.PowerShell.U... Sends output to a ...
+Set-Printer                       Function  PrintManagement           ...
+Get-PrinterPort                   Function  PrintManagement           ...
+Write-PrinterNfcTag               Function  PrintManagement           ...
+Get-PrinterProperty               Function  PrintManagement           ...
+Set-PrinterProperty               Function  PrintManagement           ...
+Add-PrinterDriver                 Function  PrintManagement           ...
+Get-PrinterDriver                 Function  PrintManagement           ...
+Add-PrinterPort                   Function  PrintManagement           ...
+Remove-PrinterPort                Function  PrintManagement           ...
+Read-PrinterNfcTag                Function  PrintManagement           ...
+Remove-Printer                    Function  PrintManagement           ...
+Remove-PrinterDriver              Function  PrintManagement           ...
+Get-Printer                       Function  PrintManagement           ...
+Rename-Printer                    Function  PrintManagement           ...
+Add-Printer                       Function  PrintManagement           ...
+
+
+PS C:\Windows\system32> help Out-Printer
+
+NOMBRE
+    Out-Printer
+
+SINOPSIS
+    Sends output to a printer.
+
+
+SINTAXIS
+    Out-Printer [[-Name] <String>] [-InputObject <PSObject>] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Out-Printer cmdlet sends output to the default printer or to an alternate printer,
+    if one is specified.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821841
+    Out-File
+    Out-String
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Out-Printer -examples".
+    Para obtener más información, escriba: "get-help Out-Printer -detailed".
+    Para obtener información técnica, escriba: "get-help Out-Printer -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Out-Printer -online"
+
+
+PS C:\Windows\system32> help Out-File
+
+NOMBRE
+    Out-File
+
+SINOPSIS
+    Sends output to a file.
+
+
+SINTAXIS
+    Out-File [-FilePath] <String> [[-Encoding] {unknown | string | unicode |
+    bigendianunicode | utf8 | utf7 | utf32 | ascii | default | oem}] [-Append] [-Confirm]
+    [-Force] [-InputObject <PSObject>] [-NoClobber] [-NoNewline] [-WhatIf] [-Width
+    <Int32>] [<CommonParameters>]
+
+    Out-File [[-Encoding] {unknown | string | unicode | bigendianunicode | utf8 | utf7 |
+    utf32 | ascii | default | oem}] [-Append] [-Confirm] [-Force] [-InputObject
+    <PSObject>] -LiteralPath <String> [-NoClobber] [-NoNewline] [-WhatIf] [-Width <Int32>]
+    [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Out-File cmdlet sends output to a file. You can use this cmdlet instead of the
+    redirection operator (>) when you need to use its parameters.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821839
+    Out-GridView
+    Out-Printer
+    Out-String
+    Tee-Object
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Out-File -examples".
+    Para obtener más información, escriba: "get-help Out-File -detailed".
+    Para obtener información técnica, escriba: "get-help Out-File -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Out-File -online"
+
+
+PS C:\Windows\system32> help *process*
+
+Name                              Category  Module                    Synopsis
+----                              --------  ------                    --------
+Enter-PSHostProcess               Cmdlet    Microsoft.PowerShell.Core Connects to and en...
+Exit-PSHostProcess                Cmdlet    Microsoft.PowerShell.Core Closes an interact...
+Get-PSHostProcessInfo             Cmdlet    Microsoft.PowerShell.Core
+Debug-Process                     Cmdlet    Microsoft.PowerShell.M... Debugs one or more...
+Get-Process                       Cmdlet    Microsoft.PowerShell.M... Gets the processes...
+Start-Process                     Cmdlet    Microsoft.PowerShell.M... Starts one or more...
+Stop-Process                      Cmdlet    Microsoft.PowerShell.M... Stops one or more ...
+Wait-Process                      Cmdlet    Microsoft.PowerShell.M... Waits for the proc...
+ConvertTo-ProcessMitigationPolicy Cmdlet    ProcessMitigations        ConvertTo-ProcessM...
+Get-ProcessMitigation             Cmdlet    ProcessMitigations        Get-ProcessMitigat...
+Set-ProcessMitigation             Cmdlet    ProcessMitigations        Set-ProcessMitigat...
+
+
+PS C:\Windows\system32> help *log*
+
+Name                              Category  Module                    Synopsis
+----                              --------  ------                    --------
+Clear-EventLog                    Cmdlet    Microsoft.PowerShell.M... Clears all entries...
+Get-EventLog                      Cmdlet    Microsoft.PowerShell.M... Gets the events in...
+Limit-EventLog                    Cmdlet    Microsoft.PowerShell.M... Sets the event log...
+New-EventLog                      Cmdlet    Microsoft.PowerShell.M... Creates a new even...
+Remove-EventLog                   Cmdlet    Microsoft.PowerShell.M... Deletes an event l...
+Show-EventLog                     Cmdlet    Microsoft.PowerShell.M... Displays the event...
+Write-EventLog                    Cmdlet    Microsoft.PowerShell.M... Writes an event to...
+Enable-AppBackgroundTaskDiagno... Cmdlet    AppBackgroundTask         Enable-AppBackgrou...
+Disable-AppBackgroundTaskDiagn... Cmdlet    AppBackgroundTask         Disable-AppBackgro...
+Get-AppxLog                       Function  Appx                      ...
+Export-BinaryMiLog                Cmdlet    CimCmdlets                Export-BinaryMiLog...
+Import-BinaryMiLog                Cmdlet    CimCmdlets                Import-BinaryMiLog...
+Get-MpThreatCatalog               Function  ConfigDefender            ...
+Get-DeliveryOptimizationLog       Cmdlet    DeliveryOptimization      Get-DeliveryOptimi...
+Start-AutologgerConfig            Function  EventTracingManagement    ...
+Remove-AutologgerConfig           Function  EventTracingManagement    ...
+Get-AutologgerConfig              Function  EventTracingManagement    ...
+Update-AutologgerConfig           Function  EventTracingManagement    ...
+New-AutologgerConfig              Function  EventTracingManagement    ...
+Test-FileCatalog                  Cmdlet    Microsoft.PowerShell.S... Test-FileCatalog...
+New-FileCatalog                   Cmdlet    Microsoft.PowerShell.S... New-FileCatalog...
+Set-DtcLog                        Function  MsDtc                     ...
+Get-DtcLog                        Function  MsDtc                     ...
+Reset-DtcLog                      Function  MsDtc                     ...
+Get-PcsvDeviceLog                 Function  PcsvDevice                ...
+Clear-PcsvDeviceLog               Function  PcsvDevice                ...
+Get-LogProperties                 Function  PSDiagnostics             ...
+Set-LogProperties                 Function  PSDiagnostics             ...
+Stop-StorageDiagnosticLog         Function  Storage                   ...
+Start-StorageDiagnosticLog        Function  Storage                   ...
+Get-WindowsUpdateLog              Function  WindowsUpdate             ...
+about_Eventlogs                   HelpFile                            Windows PowerShell...
+about_Logical_Operators           HelpFile                            Describes the oper...
+
+
+PS C:\Windows\system32> help Write-EventLog
+
+NOMBRE
+    Write-EventLog
+
+SINOPSIS
+    Writes an event to an event log.
+
+
+SINTAXIS
+    Write-EventLog [-LogName] <String> [-Source] <String> [-EventId] <Int32> [[-EntryType]
+    {Error | Information | FailureAudit | SuccessAudit | Warning}] [-Message] <String>
+    [-Category <Int16>] [-ComputerName <String>] [-RawData <Byte[]>] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Write-EventLog cmdlet writes an event to an event log.
+
+    To write an event to an event log, the event log must exist on the computer and the
+    source must be registered for the event log.
+
+    The cmdlets that contain the EventLog noun (the EventLog cmdlets) work only on classic
+    event logs. To get events from logs that use the Windows Event Log technology in
+    Windows Vista and later versions of the Windows operating system, use the Get-WinEvent
+    cmdlet.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821651
+    Clear-EventLog
+    Get-EventLog
+    Limit-EventLog
+    New-EventLog
+    Remove-EventLog
+    Show-EventLog
+    Write-EventLog
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Write-EventLog -examples".
+    Para obtener más información, escriba: "get-help Write-EventLog -detailed".
+    Para obtener información técnica, escriba: "get-help Write-EventLog -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Write-EventLog -online"
+
+
+PS C:\Windows\system32> help *alias*
+
+Name                              Category  Module                    Synopsis
+----                              --------  ------                    --------
+Export-Alias                      Cmdlet    Microsoft.PowerShell.U... Exports informatio...
+Get-Alias                         Cmdlet    Microsoft.PowerShell.U... Gets the aliases f...
+Import-Alias                      Cmdlet    Microsoft.PowerShell.U... Imports an alias l...
+New-Alias                         Cmdlet    Microsoft.PowerShell.U... Creates a new alias.
+Set-Alias                         Cmdlet    Microsoft.PowerShell.U... Creates or changes...
+Alias                             Provider  Microsoft.PowerShell.Core Provides access to...
+about_Aliases                     HelpFile                            Describes how to u...
+
+
+PS C:\Windows\system32> help *transcript*
+
+Name                              Category  Module                    Synopsis
+----                              --------  ------                    --------
+Start-Transcript                  Cmdlet    Microsoft.PowerShell.Host Creates a record o...
+Stop-Transcript                   Cmdlet    Microsoft.PowerShell.Host Stops a transcript.
+
+
+PS C:\Windows\system32> Get-Help Start-Transcript
+
+NOMBRE
+    Start-Transcript
+
+SINOPSIS
+    Creates a record of all or part of a Windows PowerShell session to a text file.
+
+
+SINTAXIS
+    Start-Transcript [[-LiteralPath] <String>] [-Append] [-Confirm] [-Force]
+    [-IncludeInvocationHeader] [-NoClobber] [-WhatIf] [<CommonParameters>]
+
+    Start-Transcript [[-OutputDirectory] <String>] [-Append] [-Confirm] [-Force]
+    [-IncludeInvocationHeader] [-NoClobber] [-WhatIf] [<CommonParameters>]
+
+    Start-Transcript [[-Path] <String>] [-Append] [-Confirm] [-Force]
+    [-IncludeInvocationHeader] [-NoClobber] [-WhatIf] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Start-Transcript cmdlet creates a record of all or part of a Windows PowerShell
+    session to a text file. The transcript includes all command that the user types and
+    all output that appears on the console.
+
+    Starting in Windows PowerShell 5.0, Start-Transcript includes the host name in the
+    generated file name of all transcripts. This is especially useful when your
+    enterprise's logging is centralized. Files that are created by the Start-Transcript
+    cmdlet include random characters in names to prevent potential overwrites or
+    duplication when two or more transcripts are started simultaneously. This also
+    prevents unauthorized discovery of transcripts that are stored in a centralized file
+    share. Additionally in Windows PowerShell 5.0, the Start-Transcript cmdlet works in
+    Windows PowerShell ISE.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821532
+    Stop-Transcript
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Start-Transcript -examples".
+    Para obtener más información, escriba: "get-help Start-Transcript -detailed".
+    Para obtener información técnica, escriba: "get-help Start-Transcript -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Start-Transcript -online"
+
+
+PS C:\Windows\system32> Get-Help Stop-Transcript
+
+NOMBRE
+    Stop-Transcript
+
+SINOPSIS
+    Stops a transcript.
+
+
+SINTAXIS
+    Stop-Transcript [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Stop-Transcript cmdlet stops a transcript that was started by the Start-Transcript
+    cmdlet. Alternatively, you can end a session to stop a transcript.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821533
+    Start-Transcript
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Stop-Transcript -examples".
+    Para obtener más información, escriba: "get-help Stop-Transcript -detailed".
+    Para obtener información técnica, escriba: "get-help Stop-Transcript -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Stop-Transcript -online"
+
+
+PS C:\Windows\system32> help Get-EventLog
+
+NOMBRE
+    Get-EventLog
+
+SINOPSIS
+    Gets the events in an event log, or a list of the event logs, on the local or remote
+    computers.
+
+
+SINTAXIS
+    Get-EventLog [-LogName] <String> [[-InstanceId] <Int64[]>] [-After <DateTime>]
+    [-AsBaseObject] [-Before <DateTime>] [-ComputerName <String[]>] [-EntryType {Error |
+    Information | FailureAudit | SuccessAudit | Warning}] [-Index <Int32[]>] [-Message
+    <String>] [-Newest <Int32>] [-Source <String[]>] [-UserName <String[]>]
+    [<CommonParameters>]
+
+    Get-EventLog [-AsString] [-ComputerName <String[]>] [-List] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Get-EventLog cmdlet gets events and event logs on the local and remote computers.
+
+    You can use the parameters of this cmdlet to search for events by using their property
+    values. This cmdlet gets only the events that match all of the specified property
+    values.
+
+    The cmdlets that contain the EventLog noun work only on classic event logs. To get
+    events from logs that use the Windows Event Log technology in Windows Vista and later
+    versions of Windows, use Get-WinEvent.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821585
+    Clear-EventLog
+    Limit-EventLog
+    New-EventLog
+    Remove-EventLog
+    Show-EventLog
+    Write-EventLog
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Get-EventLog -examples".
+    Para obtener más información, escriba: "get-help Get-EventLog -detailed".
+    Para obtener información técnica, escriba: "get-help Get-EventLog -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Get-EventLog -online"
+
+
+PS C:\Windows\system32> help *security*
+
+Name                              Category  Module                    Synopsis
+----                              --------  ------                    --------
+Set-NetFirewallSecurityFilter     Function  NetSecurity               ...
+Get-NetFirewallSecurityFilter     Function  NetSecurity               ...
+
+
+PS C:\Windows\system32> help *service*
+
+Name                              Category  Module                    Synopsis
+----                              --------  ------                    --------
+Get-Service                       Cmdlet    Microsoft.PowerShell.M... Gets the services ...
+New-Service                       Cmdlet    Microsoft.PowerShell.M... Creates a new Wind...
+New-WebServiceProxy               Cmdlet    Microsoft.PowerShell.M... Creates a Web serv...
+Restart-Service                   Cmdlet    Microsoft.PowerShell.M... Stops and then sta...
+Resume-Service                    Cmdlet    Microsoft.PowerShell.M... Resumes one or mor...
+Set-Service                       Cmdlet    Microsoft.PowerShell.M... Starts, stops, and...
+Start-Service                     Cmdlet    Microsoft.PowerShell.M... Starts one or more...
+Stop-Service                      Cmdlet    Microsoft.PowerShell.M... Stops one or more ...
+Suspend-Service                   Cmdlet    Microsoft.PowerShell.M... Suspends (pauses) ...
+Get-NetFirewallServiceFilter      Function  NetSecurity               ...
+Set-NetFirewallServiceFilter      Function  NetSecurity               ...
+
+
+PS C:\Windows\system32> get-help Get-Service
+
+NOMBRE
+    Get-Service
+
+SINOPSIS
+    Gets the services on a local or remote computer.
+
+
+SINTAXIS
+    Get-Service [-ComputerName <String[]>] [-DependentServices] -DisplayName <String[]>
+    [-Exclude <String[]>] [-Include <String[]>] [-RequiredServices] [<CommonParameters>]
+
+    Get-Service [-ComputerName <String[]>] [-DependentServices] [-Exclude <String[]>]
+    [-Include <String[]>] [-InputObject <ServiceController[]>] [-RequiredServices]
+    [<CommonParameters>]
+
+    Get-Service [[-Name] <String[]>] [-ComputerName <String[]>] [-DependentServices]
+    [-Exclude <String[]>] [-Include <String[]>] [-RequiredServices] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Get-Service cmdlet gets objects that represent the services on a local computer or
+    on a remote computer, including running and stopped services.
+
+    You can direct this cmdlet to get only particular services by specifying the service
+    name or display name of the services, or you can pipe service objects to this cmdlet.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821593
+    New-Service
+    Restart-Service
+    Resume-Service
+    Set-Service
+    Start-Service
+    Stop-Service
+    Suspend-Service
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Get-Service -examples".
+    Para obtener más información, escriba: "get-help Get-Service -detailed".
+    Para obtener información técnica, escriba: "get-help Get-Service -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Get-Service -online"
+
+
+PS C:\Windows\system32> get-help new-alias
+
+NOMBRE
+    New-Alias
+
+SINOPSIS
+    Creates a new alias.
+
+
+SINTAXIS
+    New-Alias [-Name] <String> [-Value] <String> [-Confirm] [-Description <String>]
+    [-Force] [-Option {None | ReadOnly | Constant | Private | AllScope | Unspecified}]
+    [-PassThru] [-Scope <String>] [-WhatIf] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The New-Alias cmdlet creates a new alias in the current Windows PowerShell session.
+    Aliases created by using New-Alias are not saved after you exit the session or close
+    Windows PowerShell. You can use the Export-Alias cmdlet to save your alias information
+    to a file. You can later use Import-Alias to retrieve that saved alias information.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821831
+    Export-Alias
+    Get-Alias
+    Import-Alias
+    Set-Alias
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help New-Alias -examples".
+    Para obtener más información, escriba: "get-help New-Alias -detailed".
+    Para obtener información técnica, escriba: "get-help New-Alias -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help New-Alias -online"
+
+
+PS C:\Windows\system32> help Get-Process
+
+NOMBRE
+    Get-Process
+
+SINOPSIS
+    Gets the processes that are running on the local computer or a remote computer.
+
+
+SINTAXIS
+    Get-Process [[-Name] <String[]>] [-ComputerName <String[]>] [-FileVersionInfo]
+    [-Module] [<CommonParameters>]
+
+    Get-Process [-ComputerName <String[]>] [-FileVersionInfo] -Id <Int32[]> [-Module]
+    [<CommonParameters>]
+
+    Get-Process [-ComputerName <String[]>] [-FileVersionInfo] -InputObject <Process[]>
+    [-Module] [<CommonParameters>]
+
+    Get-Process -Id <Int32[]> -IncludeUserName [<CommonParameters>]
+
+    Get-Process [[-Name] <String[]>] -IncludeUserName [<CommonParameters>]
+
+    Get-Process -IncludeUserName -InputObject <Process[]> [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Get-Process cmdlet gets the processes on a local or remote computer.
+
+    Without parameters, this cmdlet gets all of the processes on the local computer. You
+    can also specify a particular process by process name or process ID (PID) or pass a
+    process object through the pipeline to this cmdlet.
+
+    By default, this cmdlet returns a process object that has detailed information about
+    the process and supports methods that let you start and stop the process. You can also
+    use the parameters of the Get-Process cmdlet to get file version information for the
+    program that runs in the process and to get the modules that the process loaded.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?linkid=821590
+    Debug-Process
+    Get-Process
+    Start-Process
+    Stop-Process
+    Wait-Process
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Get-Process -examples".
+    Para obtener más información, escriba: "get-help Get-Process -detailed".
+    Para obtener información técnica, escriba: "get-help Get-Process -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Get-Process -online"
+
+
+PS C:\Windows\system32> help Out-File
+
+NOMBRE
+    Out-File
+
+SINOPSIS
+    Sends output to a file.
+
+
+SINTAXIS
+    Out-File [-FilePath] <String> [[-Encoding] {unknown | string | unicode |
+    bigendianunicode | utf8 | utf7 | utf32 | ascii | default | oem}] [-Append] [-Confirm]
+    [-Force] [-InputObject <PSObject>] [-NoClobber] [-NoNewline] [-WhatIf] [-Width
+    <Int32>] [<CommonParameters>]
+
+    Out-File [[-Encoding] {unknown | string | unicode | bigendianunicode | utf8 | utf7 |
+    utf32 | ascii | default | oem}] [-Append] [-Confirm] [-Force] [-InputObject
+    <PSObject>] -LiteralPath <String> [-NoClobber] [-NoNewline] [-WhatIf] [-Width <Int32>]
+    [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Out-File cmdlet sends output to a file. You can use this cmdlet instead of the
+    redirection operator (>) when you need to use its parameters.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821839
+    Out-GridView
+    Out-Printer
+    Out-String
+    Tee-Object
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Out-File -examples".
+    Para obtener más información, escriba: "get-help Out-File -detailed".
+    Para obtener información técnica, escriba: "get-help Out-File -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Out-File -online"
+
+
+PS C:\Windows\system32> Get-EventLog -LogName Security -Newest 100
+
+   Index Time          EntryType   Source                 InstanceID Message
+   ----- ----          ---------   ------                 ---------- -------
+  224835 ene. 29 10:24 SuccessA... Microsoft-Windows...         4672 Se asignaron privil...
+  224834 ene. 29 10:24 SuccessA... Microsoft-Windows...         4624 Se inició sesión co...
+  224833 ene. 29 10:24 SuccessA... Microsoft-Windows...         4798 Se enumeró la perte...
+  224832 ene. 29 10:24 SuccessA... Microsoft-Windows...         4672 Se asignaron privil...
+  224831 ene. 29 10:24 SuccessA... Microsoft-Windows...         4624 Se inició sesión co...
+  224830 ene. 29 10:24 SuccessA... Microsoft-Windows...         4672 Se asignaron privil...
+  224829 ene. 29 10:24 SuccessA... Microsoft-Windows...         4624 Se inició sesión co...
+  224828 ene. 29 10:07 SuccessA... Microsoft-Windows...         4672 Se asignaron privil...
+  224827 ene. 29 10:07 SuccessA... Microsoft-Windows...         4624 Se inició sesión co...
+  224826 ene. 29 10:04 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224825 ene. 29 10:04 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224824 ene. 29 09:55 SuccessA... Microsoft-Windows...         4672 Se asignaron privil...
+  224823 ene. 29 09:55 SuccessA... Microsoft-Windows...         4624 Se inició sesión co...
+  224822 ene. 29 09:48 SuccessA... Microsoft-Windows...         4672 Se asignaron privil...
+  224821 ene. 29 09:48 SuccessA... Microsoft-Windows...         4624 Se inició sesión co...
+  224820 ene. 29 09:46 SuccessA... Microsoft-Windows...         4672 Se asignaron privil...
+  224819 ene. 29 09:46 SuccessA... Microsoft-Windows...         4624 Se inició sesión co...
+  224818 ene. 29 09:40 SuccessA... Microsoft-Windows...         4672 Se asignaron privil...
+  224817 ene. 29 09:40 SuccessA... Microsoft-Windows...         4624 Se inició sesión co...
+  224816 ene. 29 09:39 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224815 ene. 29 09:31 SuccessA... Microsoft-Windows...         4672 Se asignaron privil...
+  224814 ene. 29 09:31 SuccessA... Microsoft-Windows...         4624 Se inició sesión co...
+  224813 ene. 29 09:31 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224812 ene. 29 09:31 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224811 ene. 29 09:24 SuccessA... Microsoft-Windows...         4672 Se asignaron privil...
+  224810 ene. 29 09:24 SuccessA... Microsoft-Windows...         4624 Se inició sesión co...
+  224809 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224808 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224807 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224806 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224805 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224804 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224803 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224802 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224801 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224800 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224799 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224798 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224797 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224796 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224795 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224794 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224793 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224792 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224791 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224790 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224789 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224788 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224787 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224786 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224785 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224784 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224783 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224782 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224781 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224780 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224779 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224778 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224777 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224776 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224775 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224774 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224773 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224772 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224771 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224770 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224769 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224768 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224767 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224766 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224765 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224764 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224763 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224762 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224761 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224760 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224759 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224758 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224757 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224756 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224755 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224754 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224753 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224752 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224751 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224750 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224749 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224748 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224747 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224746 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224745 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224744 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224743 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224742 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224741 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224740 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224739 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224738 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224737 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+  224736 ene. 29 09:24 SuccessA... Microsoft-Windows...         5379 Las credenciales de...
+
+
+PS C:\Windows\system32> Get-Help Out-File
+
+NOMBRE
+    Out-File
+
+SINOPSIS
+    Sends output to a file.
+
+
+SINTAXIS
+    Out-File [-FilePath] <String> [[-Encoding] {unknown | string | unicode |
+    bigendianunicode | utf8 | utf7 | utf32 | ascii | default | oem}] [-Append] [-Confirm]
+    [-Force] [-InputObject <PSObject>] [-NoClobber] [-NoNewline] [-WhatIf] [-Width
+    <Int32>] [<CommonParameters>]
+
+    Out-File [[-Encoding] {unknown | string | unicode | bigendianunicode | utf8 | utf7 |
+    utf32 | ascii | default | oem}] [-Append] [-Confirm] [-Force] [-InputObject
+    <PSObject>] -LiteralPath <String> [-NoClobber] [-NoNewline] [-WhatIf] [-Width <Int32>]
+    [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Out-File cmdlet sends output to a file. You can use this cmdlet instead of the
+    redirection operator (>) when you need to use its parameters.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821839
+    Out-GridView
+    Out-Printer
+    Out-String
+    Tee-Object
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Out-File -examples".
+    Para obtener más información, escriba: "get-help Out-File -detailed".
+    Para obtener información técnica, escriba: "get-help Out-File -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Out-File -online"
+
+
+PS C:\Windows\system32> Get-Help Out-File -Detailed
+
+NOMBRE
+    Out-File
+
+SINOPSIS
+    Sends output to a file.
+
+
+SINTAXIS
+    Out-File [-FilePath] <String> [[-Encoding] {unknown | string | unicode |
+    bigendianunicode | utf8 | utf7 | utf32 | ascii | default | oem}] [-Append] [-Confirm]
+    [-Force] [-InputObject <PSObject>] [-NoClobber] [-NoNewline] [-WhatIf] [-Width
+    <Int32>] [<CommonParameters>]
+
+    Out-File [[-Encoding] {unknown | string | unicode | bigendianunicode | utf8 | utf7 |
+    utf32 | ascii | default | oem}] [-Append] [-Confirm] [-Force] [-InputObject
+    <PSObject>] -LiteralPath <String> [-NoClobber] [-NoNewline] [-WhatIf] [-Width <Int32>]
+    [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Out-File cmdlet sends output to a file. You can use this cmdlet instead of the
+    redirection operator (>) when you need to use its parameters.
+
+
+PARÁMETROS
+    -Append [<SwitchParameter>]
+        Indicates that the cmdlet adds the output to the end of an existing file, instead
+        of replacing the file contents.
+
+    -Confirm [<SwitchParameter>]
+        Prompts you for confirmation before running the cmdlet.
+
+    -Encoding <String>
+        Specifies the type of character encoding used in the file. The acceptable values
+        for this parameter are:
+
+        - Unknown
+
+        - String
+
+        - Unicode
+
+        - BigEndianUnicode
+
+        - UTF8
+
+        - UTF7
+
+        - UTF32
+
+        - ASCII
+
+        - Default
+
+        - OEM
+
+
+        Unicode is the default.
+
+        Default uses the encoding of the system's current ANSI code page.
+        OEM uses the current original equipment manufacturer code page identifier for the
+        operating system.
+
+
+    -FilePath <String>
+        Specifies the path to the output file.
+
+    -Force [<SwitchParameter>]
+        Indicates that the cmdlet overwrites an existing read-only file. Even using the
+        Force parameter, the cmdlet cannot override security restrictions.
+
+    -InputObject <PSObject>
+        Specifies the objects to be written to the file. Enter a variable that contains
+        the objects or type a command or expression that gets the objects.
+
+    -LiteralPath <String>
+        Specifies the path to the output file. Unlike FilePath , the value of the
+        LiteralPath parameter is used exactly as it is typed. No characters are
+        interpreted as wildcards. If the path includes escape characters, enclose it in
+        single quotation marks. Single quotation marks tell Windows PowerShell not to
+        interpret any characters as escape sequences.
+
+    -NoClobber [<SwitchParameter>]
+        Indicates that the cmdlet will not overwrite an existing file. By default, if a
+        file exists in the specified path, Out-File overwrites the file without warning.
+        If both Append and NoClobber are used, the output is appended to the existing file.
+
+    -NoNewline [<SwitchParameter>]
+        @{Text=}
+
+    -WhatIf [<SwitchParameter>]
+        Shows what would happen if the cmdlet runs. The cmdlet is not run.
+
+    -Width <Int32>
+        Specifies the number of characters in each line of output. Any additional
+        characters are truncated, not wrapped. If you omit this parameter, the width is
+        determined by the characteristics of the host. The default for the Windows
+        PowerShell console is 80 characters.
+
+    <CommonParameters>
+        Este cmdlet admite los parámetros comunes: Verbose, Debug,
+        ErrorAction, ErrorVariable, WarningAction, WarningVariable,
+        OutBuffer, PipelineVariable y OutVariable. Para obtener más información, consulta
+        about_CommonParameters (https:/go.microsoft.com/fwlink/?LinkID=113216).
+
+    Example 1: Send output to a file
+
+    PS C:\>Get-Process | Out-File -filepath C:\Test1\process.txt
+
+    This command sends a list of processes on the computer to the Process.txt file. If the
+    file does not exist, Out-File creates it. Because the name of the FilePath parameter
+    is optional, you can omit it and submit the equivalent command `Get-Process | Outfile
+    C:\Test1\process.txt`.
+    Example 2: Send output to a file without overwriting
+
+    PS C:\>Get-Process | Out-File C:\Test1\process.txt -NoClobber
+
+    Out-File : File C:\Test1\process.txt already exists and NoClobber was specified.
+    At line:1 char:23
+    + Get-Process | Out-File  <<<< process.txt -NoClobber
+
+    This command sends a list of processes to the Process.txt file, but it uses the
+    NoClobber parameter, which prevents an existing file from being overwritten. The
+    output shows the error message that appears when NoClobber is used with an existing
+    file.
+    Example 3: Send output to a file in ASCII format
+
+    PS C:\>$A = Get-Process
+    PS C:\>Out-File -FilePath C:\Test1\process.txt -InputObject $A -Encoding ASCII -Width
+    50
+
+    These commands send a list of processes on the computer to the Process.txt file. The
+    text is encoded in ASCII format so that it can be read by search programs like Findstr
+    and Grep. By default, Out-File uses Unicode format.
+
+    The first command gets the list of processes and stores them in the $A variable. The
+    second command uses the Out-File cmdlet to send the list to the Process.txt file.
+
+    The command uses the InputObject parameter to specify that the input is in the $A
+    variable. It uses the Encoding parameter to convert the output to ASCII format. It
+    uses the Width parameter to limit each line in the file to 50 characters. Because the
+    lines of output are truncated at 50 characters, the rightmost column in the process
+    table is omitted.
+    Example 4: Send output from outside a file system drive
+
+    PS C:\>Set-Location hklm:\software
+    PS C:\>Get-Acl mycompany\mykey | Out-File -FilePath c:\ps\acl.txt
+    PS C:\>Get-Acl mycompany\mykey | Out-File -FilePath filesystem::acl.txt
+
+    These commands show how to use the Out-File cmdlet when you are not in a FileSystem
+    drive.
+
+    The first command sets the current location to the HKLM:\Software registry key.
+
+    The second and third commands have the same effect. They use the Get-Acl cmdlet to get
+    the security descriptor of the MyKey registry subkey (HKLM\Software\MyCompany\MyKey).
+    A pipeline operator passes the result to the Out-File cmdlet, which sends it to the
+    Acl.txt file.
+
+    Because Out-File is not supported by the Windows PowerShell Registry provider, you
+    must specify either the file system drive name, such as c:, or the name of the
+    provider followed by two colons, FileSystem::, in the value of the FilePath parameter.
+    The second and third commands demonstrate these methods.
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Out-File -examples".
+    Para obtener más información, escriba: "get-help Out-File -detailed".
+    Para obtener información técnica, escriba: "get-help Out-File -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Out-File -online"
+
+
+PS C:\Windows\system32> Get-History
+
+  Id CommandLine
+  -- -----------
+   1 help-update
+   2 help-update
+   3 help get-process
+   4 help get-process -examples
+   5 update-help
+   6 help *html*
+   7 help *printer*
+   8 Start-Transcript
+   9 Stop-Transcript
+  10 clear
+  11 Start-Transcript
+  12 help *html*
+  13 help *printer*
+  14 help Out-Printer
+  15 help Out-File
+  16 help *process*
+  17 help *log*
+  18 help Write-EventLog
+  19 help *alias*
+  20 help *transcript*
+  21 Get-Help Start-Transcript
+  22 Get-Help Stop-Transcript
+  23 help Get-EventLog
+  24 help *security*
+  25 help *service*
+  26 get-help Get-Service
+  27 get-help new-alias
+  28 help Get-Process
+  29 help Out-File
+  30 Get-EventLog -LogName Security -Newest 100
+  31 Get-Help Out-File
+  32 Get-Help Out-File -Detailed
+
+
+PS C:\Windows\system32> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20200129104441
+**********************
