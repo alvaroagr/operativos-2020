@@ -1,0 +1,65 @@
+----------EJERCICIOS----------
+1. Cree dos archivos de texto similares (con una o dos líneas diferentes). Compárelos empleando diff.
+
+2. Qué ocurre si se ejecuta:
+		get-service | export-csv servicios.csv | out-file
+   ¿Por qué?
+
+3. ¿Cómo haría para crear un archivo delimitado por puntos y comas (;)? PISTA: Se emplea export-csv, pero con un parámetro adicional.
+
+4. Export-cliXML y Export-CSV modifican el sistema, porque pueden crear y sobreescribir archivos. ¿Existe algún parámetro que evite la sobreescritura de un archivo existente? Existe algún parámetro que permita que el comando pregunte antes de sobresscribir un archivo?
+
+5. Windows emplea configuraciones regionales, lo que incluye el separador de listas. En Windows en inglés, el separador de listas es la coma (,). ¿Cómo se le dice a Export-CSV que emplee el separador del sistema en lugar de la coma?
+
+6. Identifique un cmdlet que permita generar un número aleatorio.
+
+7. Identifique un cmdlet que despliegue la fecha y hora actuales.
+
+8. ¿Qué tipo de objeto produce el cmdlet de la pregunta 7?
+
+9. Usando el cmdlet de la pregunta 7 y select-object, despliegue solamente el día de la semana, así:
+		DayOfWeek
+		---------
+		Thursday
+
+10. Identifique un cmdlet que muestre información acerca de parches (hotfixes) instalados en el sistema.
+
+11. Empleando el cmdlet de la pregunta 10, muestre una lista de parches instalados. Luego extienda la expresión para ordenar la lista por fecha de instalación, y muestre en pantalla únicamente la fecha de instalación, el usuario que instaló el parche, y el ID del parche. Recuerde examinar los nombres de las propiedades.
+
+12. Complemente la solución a la pregunta 11, para que el sistema ordene los resultados por la descripción del parche, e incluya en el listado la descripción, el ID del parche, y la fecha de instalación. Escriba los resultados a un archivo HTML.
+
+13. Muestre una lista de las 50 entradas más nuevas del log de eventos System. Ordene la lista de modo que las entradas más antiguas aparezcan primero; las entradas producidas al mismo tiempo deben ordenarse por número índice. Muestre el número índice, la hora y la fuente para cada entrada. Escriba esta información en un archivo de texto plano.
+
+
+----------RESPUESTAS----------
+1. Ver transcripción.
+
+2. Ocurre un error debido a que el argumento necesario path, refiriendose a en que archivo (y donde) va a guardar el output, esta nulo. Además, debido a esto aunque si se genera un archivo .csv, no se escribe información sobre este (asi que la exportación fue un fracaso).
+
+3. Sabiendo que normalmente el archivo es DELIMITADO por comas, se usa el siguiente comando para crear un archivo delimitado por puntos y comas(;):
+		export-csv nombrearchivo.csv -Delimiter ";"
+
+4. Viendo los ejemplos de Export-CSV, se puede ver como el parametro -Append sirve para evitar que se sobreescriba un archivo, y en vez de esto se concatenen datos a este. Tanto para Export-CSV como Export-CliXML el parametro -Confirm es usado para que Powershell pregunte al usuario si quiere continuar antes de sobreescribir un archivo. Según la documentación revisada, Export-CliXML no posee un parametro para evitar la sobreescritura.
+
+5. Viendo los ejemplos de Export-CSV, se ve que uno utiliza el parametro -UseCulture para indicar que el delimitador usado debe ser el del sistema en lugar de la coma.
+
+6. Get-Random
+
+7. Get-Date
+
+8. El cmdlet anterior produce un objeto de tipo DateTime.
+
+9. Get-Date | Select-Object DayOfWeek
+
+10. Get-HotFix
+
+11. Get-HotFix | sort InstalledOn | Select-Object InstalledOn,InstalledBy,HotFixID
+	(ver transcripcion para ver el resultado de esta instruccion)
+
+12. Get-HotFix | sort InstalledOn,Description | Select-Object Description,HotFixID,InstalledOn | ConvertTo-Html | Out-File exercise12.html
+	(ver archivo exercise12.html en este repositorio para ver el resultado de esta instruccion)
+
+13. Get-EventLog system | sort TimeGenerated,Index | Select-Object Index,TimeGenerated,Source -Last 50 > exercise13.txt
+	(ver archivo exercise13.txt en este repositorio para ver el resultado de esta instruccion)
+
+Para más información sobre mis respuestas, ver el archivo de transcripcion transcript_ps_3.txt en este repositorio.
