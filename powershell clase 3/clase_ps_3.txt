@@ -39,7 +39,9 @@
 3. Sabiendo que normalmente el archivo es DELIMITADO por comas, se usa el siguiente comando para crear un archivo delimitado por puntos y comas(;):
 		export-csv nombrearchivo.csv -Delimiter ";"
 
-4. Viendo los ejemplos de Export-CSV, se puede ver como el parametro -Append sirve para evitar que se sobreescriba un archivo, y en vez de esto se concatenen datos a este. Tanto para Export-CSV como Export-CliXML el parametro -Confirm es usado para que Powershell pregunte al usuario si quiere continuar antes de sobreescribir un archivo. Según la documentación revisada, Export-CliXML no posee un parametro para evitar la sobreescritura.
+4. • El parametro -Append se usa en Export-CSV para evitar que se sobreescriba un archivo; en vez de esto se concatenan los datos.
+   • Según la documentación revisada, Export-CliXML no posee un parametro para evitar la sobreescritura.
+   • El parametro -Confirm se usa tanto en Export-CSV como en Export-CliXML para que Powershell pregunte al usuario si quiere continuar antes de sobreescribir un archivo.
 
 5. Viendo los ejemplos de Export-CSV, se ve que uno utiliza el parametro -UseCulture para indicar que el delimitador usado debe ser el del sistema en lugar de la coma.
 
@@ -63,3 +65,4 @@
 	(ver archivo exercise13.txt en este repositorio para ver el resultado de esta instruccion)
 
 Para más información sobre mis respuestas, ver el archivo de transcripcion transcript_ps_3.txt en este repositorio.
+La información fue obtenida a traves de leer usando help, el parametro -examples, y ensayo y error.
