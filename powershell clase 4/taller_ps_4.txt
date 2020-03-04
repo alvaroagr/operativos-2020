@@ -1,0 +1,12 @@
+get-process | ft name,id,responding -Autosize -Wrap
+get-process | ft name,id,@{n='VM (MB)';e={$_.VM / 1MB -as [int]}}, @{n='PM (MB)';e={$_.PM / 1MB -as [int]}}
+Get-EventLog -List | ft @{n='NombreLog';e={$_.Log}}, @{n='Per-Retencion';e={$_.MinimumRetentionDays}}
+Get-Service | sort status -Descending | ft -GroupBy status
+dir -path "C:\" -attributes directory | fw -col 4
+dir -path "C:\Windows\*.exe" | fl name,VersionInfo,@{n='Tamano';e={$_.Length}}
+Get-NetAdapter | where {$_.Virtual -eq $false }
+Get-DnsClientCache -Type CNAME
+dir C:\Windows\System32\*.exe | where {$_.Length -gt 5MB}
+Get-HotFix | where {$_.Description -eq "Security Update"}
+Get-HotFix | where {$_.InstalledBy -like "*System*" -and $_.Description -Like "Update"}
+Get-Process | where {$_.Name -like "*Conhost*" -or $_.Name -like "*Svchost*"}
