@@ -1,0 +1,35 @@
+Shared:
+Queue corredor;
+Semaphore sCorredor;
+Semaphore sMonitor;
+Semaphore sMonitoria;
+
+Monitor
+	while(true){
+		if(corredor.size() == 3)
+			// Como no hay nadie en sala, se va a dormir.
+		sMonitor.acquire(); // Va a esperar hasta que un estudiante en la fila lo despierte.
+		// Pide que pase el siguiente.
+		sCorredor.acquire();	// Debido a lo anterior,
+		corredor.pop();			// es necesario reducir
+		sCorredor.release();	// las sillas disponibles.
+		// Realiza la monitoria.
+		sMonitoria.release();	// Se informa al estudiante actual que puede irse.
+	}
+	
+Estudiante
+	while(true){
+		// Gasta una cantidad de tiempo programando en sala antes de buscar al monitor.
+		// Indica que va a ir a la sala del monitor.
+		sCorredor.acquire(); // 
+		if(corredor.size() == 0){
+			//Indica que no hay cupo en el corredor. Vuelve a programar en sala.
+			sCorredor.release();
+		} else {
+			corredor.add(0);
+			// Indica que esta esperando en cola.
+			sCorredor.release(); // Avisa al monitor que es el siguiente (y lo despierta si estaba durmiendo)
+			sMonitor.release(); // Espera que termine la monitoria.
+			// Indica que termino la monitoria. Vuelve a programar en sala.
+		}
+	}
