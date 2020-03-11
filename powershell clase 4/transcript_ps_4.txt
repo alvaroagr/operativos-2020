@@ -1,0 +1,1225 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20200310222434
+Nombre de usuario: DESKTOP-PJA6I75\alvaro
+Usuario RunAs: DESKTOP-PJA6I75\alvaro
+Nombre de la configuración: 
+Máquina: DESKTOP-PJA6I75 (Microsoft Windows NT 10.0.18362.0)
+Aplicación host: C:\Windows\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Id. de proceso: 11992
+PSVersion: 5.1.18362.628
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.18362.628
+BuildVersion: 10.0.18362.628
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\alvaro\Documents\PowerShell_transcript.DESKTOP-PJA6I75.EntofNxz.20200310222434.txt
+PS C:\Users\alvaro> get-process | ft name,id,responding -Autosize -Wrap
+
+Name                                                              Id Responding
+----                                                              -- ----------
+AdminService                                                    3740       True
+AppleMobileDeviceService                                        3692       True
+ApplicationFrameHost                                           11640       True
+AsusTPCenter                                                   16000       True
+AsusTPHelper                                                   12028       True
+AsusTPLoader                                                    6396       True
+audiodg                                                        11088       True
+backgroundTaskHost                                             13372       True
+browser_broker                                                  6040       True
+Calculator                                                     12164      False
+chrome                                                            72       True
+chrome                                                           760       True
+chrome                                                          1288       True
+chrome                                                          1380       True
+chrome                                                          1668       True
+chrome                                                          2164       True
+chrome                                                          2912       True
+chrome                                                          3020       True
+chrome                                                          3868       True
+chrome                                                          3904       True
+chrome                                                          4520       True
+chrome                                                          4620       True
+chrome                                                          5116       True
+chrome                                                          5216       True
+chrome                                                          5352       True
+chrome                                                          5500       True
+chrome                                                          5696       True
+chrome                                                          5780       True
+chrome                                                          6008       True
+chrome                                                          6156       True
+chrome                                                          6184       True
+chrome                                                          6204       True
+chrome                                                          6220       True
+chrome                                                          6732       True
+chrome                                                          6780       True
+chrome                                                          6800       True
+chrome                                                          7068       True
+chrome                                                          7576       True
+chrome                                                          7596       True
+chrome                                                          7728       True
+chrome                                                          8012       True
+chrome                                                          8100       True
+chrome                                                          8104       True
+chrome                                                          8324       True
+chrome                                                          8732       True
+chrome                                                          8852       True
+chrome                                                          9260       True
+chrome                                                          9272       True
+chrome                                                          9364       True
+chrome                                                          9652       True
+chrome                                                         10312       True
+chrome                                                         10408       True
+chrome                                                         10516       True
+chrome                                                         10524       True
+chrome                                                         10616       True
+chrome                                                         10668       True
+chrome                                                         10696       True
+chrome                                                         10884       True
+chrome                                                         11104       True
+chrome                                                         11208       True
+chrome                                                         11260       True
+chrome                                                         11316       True
+chrome                                                         11368       True
+chrome                                                         11440       True
+chrome                                                         11648       True
+chrome                                                         11940       True
+chrome                                                         11984       True
+chrome                                                         12016       True
+chrome                                                         12248       True
+chrome                                                         13028       True
+chrome                                                         13116       True
+chrome                                                         13256       True
+chrome                                                         13276       True
+chrome                                                         13464       True
+chrome                                                         13544       True
+chrome                                                         13612       True
+chrome                                                         13628       True
+chrome                                                         13732       True
+chrome                                                         13736       True
+chrome                                                         14128       True
+chrome                                                         14420       True
+conhost                                                         4804       True
+csrss                                                            640       True
+csrss                                                          11996       True
+ctfmon                                                          7288       True
+dllhost                                                         5204       True
+dllhost                                                         7284       True
+dptf_helper                                                     2312       True
+dwm                                                             2396       True
+E_YATII4E                                                      10644       True
+esif_uf                                                         3708       True
+EXCEL                                                           6748       True
+explorer                                                        1060       True
+fontdrvhost                                                      596       True
+fontdrvhost                                                     6856       True
+Idle                                                               0       True
+igfxCUIService                                                  2652       True
+igfxEM                                                          5368       True
+IntelCpHDCPSvc                                                  3700       True
+IntelCpHeciSvc                                                  3448       True
+jucheck                                                        10244       True
+jusched                                                         2588       True
+LockApp                                                          624       True
+lsass                                                            932       True
+mDNSResponder                                                   3716       True
+Memory Compression                                              2576       True
+Microsoft.Photos                                                5760       True
+MicrosoftEdge                                                   1552      False
+MicrosoftEdgeCP                                                 4496      False
+MicrosoftEdgeSH                                                 6808       True
+MsMpEng                                                         4376       True
+MusicBee                                                        2680       True
+MusicManager                                                    6788       True
+NisSrv                                                          5512       True
+notepad++                                                       3780       True
+NVDisplay.Container                                             2380       True
+NVDisplay.Container                                             2388       True
+OfficeClickToRun                                                3848       True
+OneDrive                                                        9824       True
+postgres                                                        4796       True
+postgres                                                        5052       True
+postgres                                                        6304       True
+postgres                                                        6316       True
+postgres                                                        6324       True
+postgres                                                        6336       True
+postgres                                                        6352       True
+postgres                                                        6376       True
+powershell_ise                                                 11992       True
+PresentationFontCache                                           6064       True
+RAVBg64                                                         4936       True
+RAVCpl64                                                        4956       True
+Registry                                                          96       True
+RuntimeBroker                                                   3108       True
+RuntimeBroker                                                   4344       True
+RuntimeBroker                                                   5268       True
+RuntimeBroker                                                   9152       True
+RuntimeBroker                                                   9328       True
+RuntimeBroker                                                  10920       True
+RuntimeBroker                                                  11100       True
+RuntimeBroker                                                  11612       True
+RuntimeBroker                                                  12012       True
+RuntimeBroker                                                  12204       True
+RuntimeBroker                                                  12672       True
+SearchFilterHost                                               13908       True
+SearchIndexer                                                   1372       True
+SearchProtocolHost                                             10228       True
+SearchUI                                                        2888       True
+SecurityHealthService                                           6976       True
+SecurityHealthSystray                                          11108       True
+services                                                         812       True
+SettingSyncHost                                                 5912       True
+SgrmBroker                                                     10080       True
+ShellExperienceHost                                             9520       True
+sihost                                                         11204       True
+SkypeApp                                                        7644       True
+SkypeBackgroundHost                                             3516       True
+smartscreen                                                    15152       True
+smss                                                             412       True
+splwow64                                                        4728       True
+spoolsv                                                         3308       True
+StartMenuExperienceHost                                         7844       True
+svchost                                                          552       True
+svchost                                                          564       True
+svchost                                                          984       True
+svchost                                                         1104       True
+svchost                                                         1176       True
+svchost                                                         1220       True
+svchost                                                         1252       True
+svchost                                                         1360       True
+svchost                                                         1420       True
+svchost                                                         1452       True
+svchost                                                         1460       True
+svchost                                                         1472       True
+svchost                                                         1516       True
+svchost                                                         1612       True
+svchost                                                         1644       True
+svchost                                                         1652       True
+svchost                                                         1676       True
+svchost                                                         1696       True
+svchost                                                         1744       True
+svchost                                                         1756       True
+svchost                                                         1760       True
+svchost                                                         1772       True
+svchost                                                         1900       True
+svchost                                                         1932       True
+svchost                                                         1944       True
+svchost                                                         2028       True
+svchost                                                         2116       True
+svchost                                                         2124       True
+svchost                                                         2236       True
+svchost                                                         2296       True
+svchost                                                         2320       True
+svchost                                                         2340       True
+svchost                                                         2480       True
+svchost                                                         2488       True
+svchost                                                         2496       True
+svchost                                                         2548       True
+svchost                                                         2624       True
+svchost                                                         2692       True
+svchost                                                         2700       True
+svchost                                                         2736       True
+svchost                                                         2792       True
+svchost                                                         2832       True
+svchost                                                         2980       True
+svchost                                                         3156       True
+svchost                                                         3220       True
+svchost                                                         3376       True
+svchost                                                         3408       True
+svchost                                                         3640       True
+svchost                                                         3724       True
+svchost                                                         3748       True
+svchost                                                         3756       True
+svchost                                                         3812       True
+svchost                                                         3832       True
+svchost                                                         3912       True
+svchost                                                         4000       True
+svchost                                                         4004       True
+svchost                                                         4012       True
+svchost                                                         4044       True
+svchost                                                         4232       True
+svchost                                                         4252       True
+svchost                                                         4436       True
+svchost                                                         4532       True
+svchost                                                         4852       True
+svchost                                                         5840       True
+svchost                                                         6656       True
+svchost                                                         6756       True
+svchost                                                         7044       True
+svchost                                                         7144       True
+svchost                                                         7444       True
+svchost                                                         7772       True
+svchost                                                         7824       True
+svchost                                                         8736       True
+svchost                                                        10276       True
+svchost                                                        10424       True
+svchost                                                        10928       True
+svchost                                                        12504       True
+svchost                                                        13992       True
+svchost                                                        15216       True
+System                                                             4       True
+SystemSettings                                                 11896      False
+taskhostw                                                       9208       True
+Time                                                            9724      False
+TunnelBear.Maintenance                                          3928       True
+usocoreworker                                                  15268       True
+WindowsInternal.ComposableShell.Experiences.TextInput.InputApp  7700       True
+wininit                                                          740       True
+winlogon                                                        8408       True
+WinStore.App                                                   11752      False
+WUDFHost                                                        1044       True
+YourPhone                                                       8180       True
+YourPhoneServer                                                 8096       True
+
+
+PS C:\Users\alvaro> get-process | ft name,id,@{n='VM (MB)';e={$_.VM / 1MB -as [int]}}, @{n='PM (MB)';e={$_.PM / 1MB -as [int]}}
+
+Name                        Id VM (MB) PM (MB)
+----                        -- ------- -------
+AdminService              3740    4196       8
+AppleMobileDeviceService  3692    4240       3
+ApplicationFrameHost     11640 2101510      29
+AsusTPCenter             16000    4231       4
+AsusTPHelper             12028    4189       1
+AsusTPLoader              6396    4221       3
+audiodg                  11088 2101372      31
+browser_broker            6040 2101341       2
+Calculator               12164    4527      20
+chrome                      72 2101708      47
+chrome                     760 2105708      22
+chrome                    1288 2101383       2
+chrome                    1380 2101373       2
+chrome                    1668 2105742      45
+chrome                    2164 2101549       7
+chrome                    2912 2105770      49
+chrome                    3020 2105764      43
+chrome                    3868 2105698      16
+chrome                    3904 2105700      20
+chrome                    4520 2105708      27
+chrome                    4620 2105742      46
+chrome                    5116 2105749      37
+chrome                    5216 2105698      17
+chrome                    5352 2105776      60
+chrome                    5500 2105633      17
+chrome                    5696 2105758      46
+chrome                    5780 2105723      36
+chrome                    6008 2105626      12
+chrome                    6156 2105708      18
+chrome                    6184 2105762      77
+chrome                    6204 2105698      16
+chrome                    6220 2105698      17
+chrome                    6732 2105698      17
+chrome                    6780 2105791      85
+chrome                    6800 2102942     706
+chrome                    7068 2105772      67
+chrome                    7576 2105738      23
+chrome                    7596 2105696      16
+chrome                    7728 2114038      98
+chrome                    8012 2105794      60
+chrome                    8100 2105626      13
+chrome                    8104 2105799      66
+chrome                    8324 2105708      20
+chrome                    8732 2105751      34
+chrome                    8852 2105895     180
+chrome                    9260 2105742      46
+chrome                    9272 2105708      23
+chrome                    9364 2105772      55
+chrome                    9652 2102439     323
+chrome                   10312 2105704      18
+chrome                   10408 2105743      38
+chrome                   10516 2105626      13
+chrome                   10524 2105651      21
+chrome                   10616 2105741      45
+chrome                   10668 2105712      25
+chrome                   10696 2105626      12
+chrome                   10884 2105722      33
+chrome                   11104 2105742      46
+chrome                   11208 2105809      89
+chrome                   11260 2109884      69
+chrome                   11316 2105698      17
+chrome                   11368 2105698      16
+chrome                   11440 2105708      22
+chrome                   11648 2105850     108
+chrome                   11940 2105626      12
+chrome                   11984 2105698      17
+chrome                   12016 2105698      16
+chrome                   12248 2105732      37
+chrome                   13028 2105706      21
+chrome                   13116 2105706      21
+chrome                   13256 2105708      22
+chrome                   13276 2105742      27
+chrome                   13464 2105712      25
+chrome                   13544 2105802     157
+chrome                   13612 2105817     107
+chrome                   13628 2105708      22
+chrome                   13732 2105706      21
+chrome                   13736 2105734      52
+chrome                   14128 2105793      34
+chrome                   14420 2105725      48
+conhost                   4804 2101343       7
+csrss                      640 2101340       2
+csrss                    11996 2101405       2
+ctfmon                    7288 2101382       5
+dllhost                   5204 2101405       3
+dllhost                   7284 2101431       5
+dptf_helper               2312 2101330       1
+dwm                       2396 2101729      55
+E_YATII4E                10644    4215       3
+esif_uf                   3708 2101319       2
+EXCEL                     6748 2102231     128
+explorer                  1060 2102012      62
+fontdrvhost                596 2101315       2
+fontdrvhost               6856 2101430       5
+Idle                         0       0       0
+igfxCUIService            2652 2101325       2
+igfxEM                    5368 2101407       5
+IntelCpHDCPSvc            3700 2101322       1
+IntelCpHeciSvc            3448 2101316       1
+jucheck                  10244      96       3
+jusched                   2588      86       2
+LockApp                    624 2101666      12
+lsass                      932 2101335       7
+mDNSResponder             3716    4164       2
+Memory Compression        2576     505       2
+Microsoft.Photos          5760    5081      55
+MicrosoftEdge             1552 2101816      23
+MicrosoftEdgeCP           4496 2134224       6
+MicrosoftEdgeSH           6808 2134169       4
+MsMpEng                   4376 2102484     789
+MusicBee                  2680     352      45
+MusicManager              6788     204      15
+NisSrv                    5512 2101368      10
+notepad++                 3780    4348      19
+NVDisplay.Container       2380    4316      24
+NVDisplay.Container       2388    4195       3
+OfficeClickToRun          3848 2101497      36
+OneDrive                  9824     301      27
+postgres                  4796    4392       4
+postgres                  5052    4348       3
+postgres                  6304    4345       3
+postgres                  6316    4344       3
+postgres                  6324    4344       3
+postgres                  6336    4344       3
+postgres                  6352    4344       3
+postgres                  6376    4344       3
+powershell_ise           11992    5221     148
+PresentationFontCache     6064    4643      24
+RAVBg64                   4936    4234       6
+RAVCpl64                  4956    4246       4
+Registry                    96     139      10
+RuntimeBroker             3108 2101490      11
+RuntimeBroker             4344 2101404       6
+RuntimeBroker             5268 2101355       2
+RuntimeBroker             9152 2101418       6
+RuntimeBroker             9328 2101362       3
+RuntimeBroker            10920 2101382       4
+RuntimeBroker            11100 2101481      13
+RuntimeBroker            11612 2101412       5
+RuntimeBroker            12012 2101336       1
+RuntimeBroker            12204 2101366       2
+RuntimeBroker            12672 2101434       7
+SearchFilterHost         13908 2101315       1
+SearchIndexer             1372 2101645      78
+SearchProtocolHost       10228 2101343       2
+SearchUI                  2888 2135046      93
+SecurityHealthService     6976 2101361       5
+SecurityHealthSystray    11108 2101353       2
+services                   812 2101311       5
+SettingSyncHost           5912 2101351       3
+SgrmBroker               10080 2101304       3
+ShellExperienceHost       9520 2101731      20
+sihost                   11204 2101406       7
+SkypeApp                  7644   37695      15
+SkypeBackgroundHost       3516 2101348       2
+smartscreen              15152 2134164       8
+smss                       412 2101288       1
+splwow64                  4728 2101369       3
+spoolsv                   3308 2101350       6
+StartMenuExperienceHost   7844 2101760      28
+svchost                    552 2101303       1
+svchost                    564 2101327       4
+svchost                    984 2101395      13
+svchost                   1104 2101352       9
+svchost                   1176 2101325       3
+svchost                   1220 2101320       2
+svchost                   1252 2101314       1
+svchost                   1360 2101321       2
+svchost                   1420 2101327       2
+svchost                   1452 2101337       2
+svchost                   1460 2101320       2
+svchost                   1472 2101319       2
+svchost                   1516 2101350       6
+svchost                   1612 2101389       9
+svchost                   1644 2101351       3
+svchost                   1652 2101331       3
+svchost                   1676 2101331       2
+svchost                   1696 2101329       3
+svchost                   1744 2101327       3
+svchost                   1756 2101374       9
+svchost                   1760 2101321       2
+svchost                   1772 2101321       2
+svchost                   1900 2101353      15
+svchost                   1932 2101313       1
+svchost                   1944 2101318       5
+svchost                   2028 2101365       4
+svchost                   2116 2101350       5
+svchost                   2124 2101315       1
+svchost                   2236 2101332       3
+svchost                   2296 2101321       3
+svchost                   2320 2101347       7
+svchost                   2340 2101321       2
+svchost                   2480 2101317       1
+svchost                   2488 2105530     108
+svchost                   2496 2101323       2
+svchost                   2548 2101353       3
+svchost                   2624 2101324       2
+svchost                   2692 2101320       2
+svchost                   2700 2101373       2
+svchost                   2736 2101317       2
+svchost                   2792 2101394       5
+svchost                   2832 2101343       3
+svchost                   2980 2101340       2
+svchost                   3156 2101368       6
+svchost                   3220 2101351       3
+svchost                   3376 2101357      10
+svchost                   3408 2101325       2
+svchost                   3640 2101334       4
+svchost                   3724 2101407      15
+svchost                   3748 2101446       6
+svchost                   3756 2101515      17
+svchost                   3812 2101323       3
+svchost                   3832 2101401       6
+svchost                   3912 2101317       2
+svchost                   4000 2101320       2
+svchost                   4004 2101328       2
+svchost                   4012 2101313       1
+svchost                   4044 2101377       5
+svchost                   4232 2101317       2
+svchost                   4252 2101322       3
+svchost                   4436 2101328       2
+svchost                   4532 2101340       3
+svchost                   4852 2101378       6
+svchost                   5840 2101314       1
+svchost                   6656 2101326       2
+svchost                   6756 2101356       4
+svchost                   7044 2101370      14
+svchost                   7144 2101326       2
+svchost                   7444 2101341       3
+svchost                   7772 2101315       2
+svchost                   7824 2101444       8
+svchost                   8736 2101411       4
+svchost                  10276 2101349       3
+svchost                  10424 2101338       3
+svchost                  10928 2101329       2
+svchost                  12504 2101321       2
+svchost                  13992 2101358       5
+svchost                  15216 2101540      26
+System                       4      26       0
+SystemSettings           11896 2101742      21
+taskhostw                 9208 2101438       7
+Time                      9724 2101678      15
+TunnelBear.Maintenance    3928     178      19
+usocoreworker            15268 2101397      36
+WindowsInternal.Compo...  7700 2101640      11
+wininit                    740 2101314       1
+winlogon                  8408 2101348       2
+WinStore.App             11752    5080      49
+WUDFHost                  1044 2101326       3
+YourPhone                 8180 2101700      15
+YourPhoneServer           8096 2101370       3
+
+
+PS C:\Users\alvaro> Get-EventLog -List | ft @{n='NombreLog';e={$_.Log}}, @{n='Per-Retencion';e={$_.MinimumRetentionDays}}
+
+NombreLog              Per-Retencion
+---------              -------------
+Application                        0
+HardwareEvents                     0
+Internet Explorer                  7
+Key Management Service             0
+OAlerts                            0
+Security
+System                             0
+Windows PowerShell                 0
+
+
+PS C:\Users\alvaro> Get-Service | sort status -Descending | ft -GroupBy status
+
+
+   Status: Running
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  NlaSvc             Reconoc. ubicación de red
+Running  ProfSvc            Servicio de perfil de usuario
+Running  FontCache3.0.0.0   Windows Presentation Foundation Fon...
+Running  FontCache          Servicio de caché de fuentes de Win...
+Running  SstpSvc            Servicio de protocolo de túnel de s...
+Running  NcbService         Agente de conexión de red
+Running  WbioSrvc           Servicio biométrico de Windows
+Running  Wcmsvc             Administrador de conexiones de Windows
+Running  EventSystem        Sistema de eventos COM+
+Running  EventLog           Registro de eventos de Windows
+Running  esifsvc            Intel(R) Dynamic Platform and Therm...
+Running  StateRepository    Servicio de repositorio de estado
+Running  SSDPSRV            Detección SSDP
+Running  WdiSystemHost      Host de sistema de diagnóstico
+Running  WdNisSvc           Servicio de inspección de red de An...
+Running  DusmSvc            Uso de datos
+Running  RasMan             Administrador de conexiones de acce...
+Running  NgcSvc             Microsoft Passport
+Running  DPS                Servicio de directivas de diagnóstico
+Running  Spooler            Cola de impresión
+Running  DoSvc              Optimización de distribución
+Running  Dnscache           Cliente DNS
+Running  OneSyncSvc_a25d54  Sincronizar host_a25d54
+Running  WdiServiceHost     Host del servicio de diagnóstico
+Running  RmSvc              Servicio de administración de radio
+Running  gpsvc              Cliente de directiva de grupo
+Running  Power              Energía
+Running  UsoSvc             Servicio Orquestador de actualizaci...
+Running  Themes             Temas
+Running  VaultSvc           Administrador de credenciales
+Running  PcaSvc             Servicio Asistente para la compatib...
+Running  LSM                Administrador de sesión local
+Running  lmhosts            Aplicación auxiliar de NetBIOS sobr...
+Running  LicenseManager     Servicio de administrador de licenc...
+Running  TabletInputService Servicio de Panel de escritura a ma...
+Running  LanmanWorkstation  Estación de trabajo
+Running  LanmanServer       Servidor
+Running  stisvc             Adquisición de imágenes de Windows ...
+Running  SystemEventsBroker Agente de eventos del sistema
+Running  PlugPlay           Plug and Play
+Running  SysMain            SysMain
+Running  iphlpsvc           Aplicación auxiliar IP
+Running  InstallService     Servicio de instalación de Microsof...
+Running  IKEEXT             Módulos de creación de claves de IP...
+Running  igfxCUIService2... Intel(R) HD Graphics Control Panel ...
+Running  TimeBrokerSvc      Agente de eventos de tiempo
+Running  SgrmBroker         Agente de supervisión en tiempo de ...
+Running  TokenBroker        Administrador de cuentas web
+Running  StorSvc            Servicio de almacenamiento
+Running  KeyIso             Aislamiento de claves CNG
+Running  mpssvc             Firewall de Windows Defender
+Running  DisplayEnhancem... Servicio de mejora de visualización
+Running  DiagTrack          Experiencias del usuario y telemetr...
+Running  bthserv            Servicio de compatibilidad con Blue...
+Running  BthAvctpSvc        Servicio AVCTP
+Running  BTAGService        Servicio de puerta de enlace de aud...
+Running  BrokerInfrastru... Servicio de infraestructura de tare...
+Running  Bonjour Service    Servicio Bonjour
+Running  ShellHWDetection   Detección de hardware shell
+Running  TrkWks             Cliente de seguimiento de vínculos ...
+Running  BFE                Motor de filtrado de base
+Running  SecurityHealthS... Servicio Seguridad de Windows
+Running  WpnService         Servicio del sistema de notificacio...
+Running  camsvc             Servicio Administrador de funcional...
+Running  WpnUserService_... Servicio de usuario de notificacion...
+Running  Audiosrv           Audio de Windows
+Running  AudioEndpointBu... Compilador de extremo de audio de W...
+Running  AtherosSvc         AtherosSvc
+Running  WSearch            Windows Search
+Running  wuauserv           Windows Update
+Running  Apple Mobile De... Apple Mobile Device Service
+Running  Appinfo            Información de la aplicación
+Running  SEMgrSvc           Administrador de pagos y NFC/SE
+Running  SENS               Servicio de notificación de eventos...
+Running  NgcCtnrSvc         Contenedor de Microsoft Passport
+Running  wscsvc             Centro de seguridad
+Running  DispBrokerDeskt... Mostrar el servicio de directivas
+Running  nsi                Servicio Interfaz de almacenamiento...
+Running  CDPSvc             Servicio de plataforma de dispositi...
+Running  RpcEptMapper       Asignador de extremos de RPC
+Running  TunnelBearMaint... TunnelBear Maintenance
+Running  Dhcp               Cliente DHCP
+Running  WinDefend          Servicio de Antivirus de Windows De...
+Running  WinHttpAutoProx... Servicio de detección automática de...
+Running  Winmgmt            Instrumental de administración de W...
+Running  RpcSs              Llamada a procedimiento remoto (RPC)
+Running  DeviceAssociati... Servicio de asociación de dispositivos
+Running  SamSs              Administrador de cuentas de seguridad
+Running  WlanSvc            Configuración automática de WLAN
+Running  cbdhsvc_a25d54     Servicio de usuario del portapapele...
+Running  DcomLaunch         Iniciador de procesos de servidor DCOM
+Running  wlidsvc            Ayudante para el inicio de sesión d...
+Running  cplspcon           Intel(R) Content Protection HDCP Se...
+Running  cphs               Intel(R) Content Protection HECI Se...
+Running  CoreMessagingRe... CoreMessaging
+Running  NVDisplay.Conta... NVIDIA Display Container LS
+Running  netprofm           Servicio de lista de redes
+Running  ClipSVC            Servicio de licencia de cliente (Cl...
+Running  ClickToRunSvc      Servicio Hacer clic y ejecutar de M...
+Running  Schedule           Programador de tareas
+Running  CDPUserSvc_a25d54  Servicio de usuario de plataforma d...
+Running  CryptSvc           Servicios de cifrado
+Running  UserManager        Administrador de usuarios
+
+
+   Status: Stopped
+
+Status   Name               DisplayName
+------   ----               -----------
+Stopped  TieringEngineSe... Administración de capas de almacena...
+Stopped  sppsvc             Protección de software
+Stopped  TapiSrv            Telefonía
+Stopped  swprv              Proveedor de instantáneas de softwa...
+Stopped  svsvc              Comprobador puntual
+Stopped  ssh-agent          OpenSSH Authentication Agent
+Stopped  spectrum           Servicio de percepción de Windows
+Stopped  SNMPTRAP           Captura de SNMP
+Stopped  SmsRouter          Servicio enrutador de SMS de Micros...
+Stopped  smphost            SMP de Espacios de almacenamiento d...
+Stopped  shpamsvc           Shared PC Account Manager
+Stopped  SharedRealitySvc   Servicio de datos espacial
+Stopped  SharedAccess       Conexión compartida a Internet (ICS)
+Stopped  TermService        Servicios de Escritorio remoto
+Stopped  AarSvc_a25d54      Agent Activation Runtime_a25d54
+Stopped  vmicvmsession      Servicio PowerShell Direct de Hyper-V
+Stopped  TrustedInstaller   Instalador de módulos de Windows
+Stopped  Wecsvc             Recopilador de eventos de Windows
+Stopped  WEPHOSTSVC         Servicio host de proveedor de cifra...
+Stopped  wercplsupport      Ayuda del Panel de control de Infor...
+Stopped  WerSvc             Servicio Informe de errores de Windows
+Stopped  WFDSConMgrSvc      Servicio de administrador de conexi...
+Stopped  WiaRpc             Eventos de adquisición de imágenes ...
+Stopped  WinRM              Administración remota de Windows (W...
+Stopped  wisvc              Servicio de Windows Insider
+Stopped  WebClient          Cliente web
+Stopped  wlpasvc            Servicio de asistente para perfil l...
+Stopped  wmiApSrv           Adaptador de rendimiento de WMI
+Stopped  WMPNetworkSvc      Servicio de uso compartido de red d...
+Stopped  workfolderssvc     Carpetas de trabajo
+Stopped  WpcMonSvc          Control parental
+Stopped  WPDBusEnum         Servicio enumerador de dispositivos...
+Stopped  WwanSvc            Configuración automática de WWAN
+Stopped  XblAuthManager     Administración de autenticación de ...
+Stopped  XblGameSave        Partida guardada en Xbox Live
+Stopped  WManSvc            Servicio de administración de Windows
+Stopped  wcncsvc            Registrador de configuración de Win...
+Stopped  wbengine           Servicio del módulo de copia de seg...
+Stopped  WarpJITSvc         WarpJITSvc
+Stopped  tzautoupdate       Actualizador de zona horaria automá...
+Stopped  UmRdpService       Redirector de puerto en modo usuari...
+Stopped  UnistoreSvc_a25d54 Almacenamiento de datos de usuarios...
+Stopped  upnphost           Dispositivo host de UPnP
+Stopped  UserDataSvc_a25d54 Acceso a datos de usuarios_a25d54
+Stopped  VacSvc             Servicio Volumetric Audio Compositor
+Stopped  vds                Disco virtual
+Stopped  vmicguestinterface Interfaz de servicio invitado de Hy...
+Stopped  vmicheartbeat      Servicio de latido de Hyper-V
+Stopped  vmickvpexchange    Servicio de intercambio de datos de...
+Stopped  vmicrdv            Servicio de virtualización de Escri...
+Stopped  vmicshutdown       Servicio de cierre de invitado de H...
+Stopped  vmictimesync       Servicio de sincronización de hora ...
+Stopped  vmicvss            Solicitante de instantáneas de volu...
+Stopped  VSS                Instantáneas de volumen
+Stopped  VSStandardColle... Visual Studio Standard Collector Se...
+Stopped  W32Time            Hora de Windows
+Stopped  WaaSMedicSvc       Windows Update Medic Service
+Stopped  WalletService      WalletService
+Stopped  TroubleshootingSvc Servicio de solución de problemas r...
+Stopped  SessionEnv         Configuración de Escritorio remoto
+Stopped  PimIndexMainten... Datos de contactos_a25d54
+Stopped  SensorService      Servicio de sensores
+Stopped  DmEnrollmentSvc    Servicio de inscripción de administ...
+Stopped  dmwappushservice   Servicio de enrutamiento de mensaje...
+Stopped  dot3svc            Configuración automática de redes c...
+Stopped  DsmSvc             Administrador de configuración de d...
+Stopped  DsSvc              Servicio de uso compartido de datos
+Stopped  Eaphost            Protocolo de autenticación extensible
+Stopped  EFS                Sistema de cifrado de archivos (EFS)
+Stopped  embeddedmode       Modo incrustado
+Stopped  EntAppSvc          Servicio de administración de aplic...
+Stopped  Fax                Fax
+Stopped  fdPHost            Host de proveedor de detección de f...
+Stopped  FDResPub           Publicación de recurso de detección...
+Stopped  fhsvc              Servicio de historial de archivos
+Stopped  FrameServer        Servicio FrameServer de la Cámara d...
+Stopped  GoogleChromeEle... Google Chrome Elevation Service
+Stopped  GraphicsPerfSvc    GraphicsPerfSvc
+Stopped  gupdate            Google Update Servicio (gupdate)
+Stopped  gupdatem           Google Update Servicio (gupdatem)
+Stopped  hidserv            Servicio de dispositivo de interfaz...
+Stopped  diagsvc            Diagnostic Execution Service
+Stopped  diagnosticshub.... Servicio Recopilador estándar del c...
+Stopped  DevQueryBroker     Agente de detección en segundo plan...
+Stopped  DevicesFlowUser... DevicesFlow_a25d54
+Stopped  AJRouter           Servicio de enrutador de AllJoyn
+Stopped  ALG                Servicio de puerta de enlace de niv...
+Stopped  AppIDSvc           Identidad de aplicación
+Stopped  AppReadiness       Preparación de aplicaciones
+Stopped  AppXSvc            Servicio de implementación de AppX ...
+Stopped  autotimesvc        Hora de la red de telefonía móvil
+Stopped  AxInstSV           Instalador de ActiveX (AxInstSV)
+Stopped  BcastDVRUserSer... Servicio de usuario de difusión y G...
+Stopped  BDESVC             Servicio Cifrado de unidad BitLocker
+Stopped  HvHost             Servicio de host HV
+Stopped  BITS               Servicio de transferencia inteligen...
+Stopped  CaptureService_... CaptureService_a25d54
+Stopped  CertPropSvc        Propagación de certificados
+Stopped  COMSysApp          Aplicación del sistema COM+
+Stopped  ConsentUxUserSv... ConsentUX_a25d54
+Stopped  CredentialEnrol... CredentialEnrollmentManagerUserSvc_...
+Stopped  defragsvc          Optimizar unidades
+Stopped  DeviceAssociati... DeviceAssociationBroker_a25d54
+Stopped  DeviceInstall      Servicio de instalación de disposit...
+Stopped  DevicePickerUse... DevicePicker_a25d54
+Stopped  BluetoothUserSe... Servicio de soporte técnico de usua...
+Stopped  icssvc             Servicio de zona con cobertura inal...
+Stopped  iPod Service       Servicio del iPod
+Stopped  IpxlatCfgSvc       Servicio de configuración de trasla...
+Stopped  pla                Registros y alertas de rendimiento
+Stopped  PNRPAutoReg        Servicio de publicación de nombres ...
+Stopped  PNRPsvc            Protocolo de resolución de nombres ...
+Stopped  PolicyAgent        Agente de directiva IPsec
+Stopped  postgresql-x64-11  postgresql-x64-11 - PostgreSQL Serv...
+Stopped  PrintNotify        Extensiones y notificaciones de imp...
+Stopped  PrintWorkflowUs... PrintWorkflow_a25d54
+Stopped  PushToInstall      Servicio PushToInstall de Windows
+Stopped  QWAVE              Experiencia de calidad de audio y v...
+Stopped  XboxGipSvc         Xbox Accessory Management Service
+Stopped  RasAuto            Administrador de conexiones automát...
+Stopped  RemoteRegistry     Registro remoto
+Stopped  RetailDemo         Servicio de prueba comercial
+Stopped  RpcLocator         Ubicador de llamada a procedimiento...
+Stopped  SCardSvr           Tarjeta inteligente
+Stopped  ScDeviceEnum       Servicio de enumeración de disposit...
+Stopped  SCPolicySvc        Directiva de extracción de tarjetas...
+Stopped  SDRSVC             Copias de seguridad de Windows
+Stopped  seclogon           Inicio de sesión secundario
+Stopped  SensorDataService  Servicio de datos del sensor
+Stopped  RemoteAccess       Enrutamiento y acceso remoto
+Stopped  SensrSvc           Servicio de supervisión de sensores
+Stopped  PhoneSvc           Servicio telefónico
+Stopped  perceptionsimul... Servicio de simulación de percepció...
+Stopped  KtmRm              KTMRM para DTC (Coordinador de tran...
+Stopped  lfsvc              Servicio de geolocalización
+Stopped  lltdsvc            Asignador de detección de topología...
+Stopped  LxpSvc             Servicio de experiencia de idioma
+Stopped  MapsBroker         Administrador de mapas descargados
+Stopped  MessagingServic... MessagingService_a25d54
+Stopped  MozillaMaintenance Mozilla Maintenance Service
+Stopped  MSDTC              Coordinador de transacciones distri...
+Stopped  MSiSCSI            Servicio del iniciador iSCSI de Mic...
+Stopped  PerfHost           DLL de host del Contador de rendimi...
+Stopped  msiserver          Windows Installer
+Stopped  NcaSvc             Asistente para la conectividad de red
+Stopped  NcdAutoSetup       Configuración automática de disposi...
+Stopped  Netlogon           Net Logon
+Stopped  Netman             Conexiones de red
+Stopped  NetSetupSvc        Servicio de configuración de red
+Stopped  NetTcpPortSharing  Servicio de uso compartido de puert...
+Stopped  ose64              Office 64 Source Engine
+Stopped  p2pimsvc           Administrador de identidad de redes...
+Stopped  p2psvc             Agrupación de red del mismo nivel
+Stopped  NaturalAuthenti... Autenticación natural
+Stopped  XboxNetApiSvc      Servicio de red de Xbox Live
+
+
+PS C:\Users\alvaro> dir -path "C:\" -attributes directory | fw -col 4
+
+
+    Directorio: C:\
+
+
+
+dev                    Intel                  masm32                 PerfLogs
+Program Files          Program Files (x86)    Python27               Rips
+sts-4.3.1.RELEASE      Users                  Windows
+
+
+PS C:\Users\alvaro> dir -path "C:\Windows\*.exe" | fl name,VersionInfo,@{n='Tamano';e={$_.Length}}
+
+
+Name        : bfsvc.exe
+VersionInfo : File:             C:\Windows\bfsvc.exe
+              InternalName:     bfsvc.exe
+              OriginalFilename: bfsvc.exe.mui
+              FileVersion:      10.0.18362.656 (WinBuild.160101.0800)
+              FileDescription:  Utilidad de servicio de actualización del archivo de
+              arranque
+              Product:          Sistema operativo Microsoft® Windows®
+              ProductVersion:   10.0.18362.656
+              Debug:            False
+              Patched:          False
+              PreRelease:       False
+              PrivateBuild:     False
+              SpecialBuild:     False
+              Language:         Español (España, internacional)
+
+Tamano      : 73216
+
+Name        : explorer.exe
+VersionInfo : File:             C:\Windows\explorer.exe
+              InternalName:     explorer
+              OriginalFilename: EXPLORER.EXE.MUI
+              FileVersion:      10.0.18362.656 (WinBuild.160101.0800)
+              FileDescription:  Explorador de Windows
+              Product:          Sistema operativo Microsoft® Windows®
+              ProductVersion:   10.0.18362.656
+              Debug:            False
+              Patched:          False
+              PreRelease:       False
+              PrivateBuild:     False
+              SpecialBuild:     False
+              Language:         Español (España, internacional)
+
+Tamano      : 4615376
+
+Name        : HelpPane.exe
+VersionInfo : File:             C:\Windows\HelpPane.exe
+              InternalName:     HelpPane.exe
+              OriginalFilename: HelpPane.exe.mui
+              FileVersion:      10.0.18362.656 (WinBuild.160101.0800)
+              FileDescription:  Ayuda y soporte técnico de Microsoft
+              Product:          Sistema operativo Microsoft® Windows®
+              ProductVersion:   10.0.18362.656
+              Debug:            False
+              Patched:          False
+              PreRelease:       False
+              PrivateBuild:     False
+              SpecialBuild:     False
+              Language:         Español (España, internacional)
+
+Tamano      : 1059840
+
+Name        : hh.exe
+VersionInfo : File:             C:\Windows\hh.exe
+              InternalName:     HH 1.41
+              OriginalFilename: HH.exe.mui
+              FileVersion:      10.0.18362.656 (WinBuild.160101.0800)
+              FileDescription:  Archivo ejecutable de ayuda HTML de Microsoft®
+              Product:          Ayuda de HTML
+              ProductVersion:   10.0.18362.656
+              Debug:            False
+              Patched:          False
+              PreRelease:       False
+              PrivateBuild:     False
+              SpecialBuild:     False
+              Language:         Español (España, internacional)
+
+Tamano      : 18432
+
+Name        : notepad.exe
+VersionInfo : File:             C:\Windows\notepad.exe
+              InternalName:     Notepad
+              OriginalFilename: NOTEPAD.EXE.MUI
+              FileVersion:      10.0.18362.1 (WinBuild.160101.0800)
+              FileDescription:  Bloc de notas
+              Product:          Sistema operativo Microsoft® Windows®
+              ProductVersion:   10.0.18362.1
+              Debug:            False
+              Patched:          False
+              PreRelease:       False
+              PrivateBuild:     False
+              SpecialBuild:     False
+              Language:         Español (España, internacional)
+
+Tamano      : 181248
+
+Name        : regedit.exe
+VersionInfo : File:             C:\Windows\regedit.exe
+              InternalName:     REGEDIT
+              OriginalFilename: REGEDIT.EXE.MUI
+              FileVersion:      10.0.18362.656 (WinBuild.160101.0800)
+              FileDescription:  Editor del Registro
+              Product:          Sistema operativo Microsoft® Windows®
+              ProductVersion:   10.0.18362.656
+              Debug:            False
+              Patched:          False
+              PreRelease:       False
+              PrivateBuild:     False
+              SpecialBuild:     False
+              Language:         Español (España, internacional)
+
+Tamano      : 358400
+
+Name        : RtCRU64.exe
+VersionInfo : File:             C:\Windows\RtCRU64.exe
+              InternalName:     RtCRU.exe
+              OriginalFilename: RtCRU.exe
+              FileVersion:      1.13.0.0
+              FileDescription:  RtCRU
+              Product:          RtCRU
+              ProductVersion:   1.13.0.0
+              Debug:            False
+              Patched:          False
+              PreRelease:       False
+              PrivateBuild:     False
+              SpecialBuild:     False
+              Language:         Inglés (Estados Unidos)
+
+Tamano      : 4340776
+
+Name        : splwow64.exe
+VersionInfo : File:             C:\Windows\splwow64.exe
+              InternalName:     splwow64.exe
+              OriginalFilename: splwow64.exe
+              FileVersion:      10.0.18362.476 (WinBuild.160101.0800)
+              FileDescription:  Print driver host for applications
+              Product:          Microsoft® Windows® Operating System
+              ProductVersion:   10.0.18362.476
+              Debug:            False
+              Patched:          False
+              PreRelease:       False
+              PrivateBuild:     False
+              SpecialBuild:     False
+              Language:         Inglés (Estados Unidos)
+
+Tamano      : 132608
+
+Name        : winhlp32.exe
+VersionInfo : File:             C:\Windows\winhlp32.exe
+              InternalName:     WINHSTB
+              OriginalFilename: WINHLP32.EXE.MUI
+              FileVersion:      10.0.18362.656 (WinBuild.160101.0800)
+              FileDescription:  Código auxiliar de Windows Winhlp32
+              Product:          Sistema operativo Microsoft® Windows®
+              ProductVersion:   10.0.18362.656
+              Debug:            False
+              Patched:          False
+              PreRelease:       False
+              PrivateBuild:     False
+              SpecialBuild:     False
+              Language:         Español (España, internacional)
+
+Tamano      : 11776
+
+Name        : write.exe
+VersionInfo : File:             C:\Windows\write.exe
+              InternalName:     write
+              OriginalFilename: write
+              FileVersion:      10.0.18362.1 (WinBuild.160101.0800)
+              FileDescription:  Windows Write
+              Product:          Microsoft® Windows® Operating System
+              ProductVersion:   10.0.18362.1
+              Debug:            False
+              Patched:          False
+              PreRelease:       False
+              PrivateBuild:     False
+              SpecialBuild:     False
+              Language:         Inglés (Estados Unidos)
+
+Tamano      : 11264
+
+
+
+PS C:\Users\alvaro> Import-Module NetAdapter
+PS C:\Users\alvaro> Get-NetAdapter | where {$_.Virtual -eq $false }
+
+Name                      InterfaceDescription                    ifIndex Status       MacA
+                                                                                       ddre
+                                                                                       ss
+----                      --------------------                    ------- ------       ----
+Wi-Fi                     Qualcomm Atheros QCA9377 Wireless Ne...      19 Up           F...
+Ethernet                  Realtek PCIe GbE Family Controller           15 Disconnected 2...
+
+
+PS C:\Users\alvaro> Get-NetAdapter | where {$_.Virtual -eq $false }
+
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Wi-Fi                     Qualcomm Atheros QCA9377 Wireless Ne...      19 Up           F0-03-8C-48-40-0B       150 Mbps
+Ethernet                  Realtek PCIe GbE Family Controller           15 Disconnected 2C-4D-54-35-58-0A          0 bps
+
+
+PS C:\Users\alvaro> Import-Module DnsClient
+PS C:\Users\alvaro> Get-DnsClientCache -Type A,AAAA
+
+Entry                     RecordName                Record Status    Section TimeTo Data   Data
+                                                    Type                     Live   Length
+-----                     ----------                ------ ------    ------- ------ ------ ----
+dis.criteo.com            widget.va1.vip.prod.cr... A      Success   Answer      55      4 74.119.119.150
+ib.adnxs.com              ib.anycast.adnxs.com      A      Success   Answer      12      4 68.67.160.133
+ib.adnxs.com              ib.anycast.adnxs.com      A      Success   Answer      12      4 68.67.179.153
+ib.adnxs.com              ib.anycast.adnxs.com      A      Success   Answer      12      4 68.67.179.166
+ib.adnxs.com              ib.anycast.adnxs.com      A      Success   Answer      12      4 68.67.160.184
+ib.adnxs.com              ib.anycast.adnxs.com      A      Success   Answer      12      4 68.67.160.132
+ib.adnxs.com              ib.anycast.adnxs.com      A      Success   Answer      12      4 68.67.160.186
+ib.adnxs.com              ib.anycast.adnxs.com      A      Success   Answer      12      4 68.67.179.155
+ib.adnxs.com              ib.anycast.adnxs.com      A      Success   Answer      12      4 68.67.179.154
+stomp.clockify.me         stomp.clockify.me         A      Success   Answer   85551      4 3.120.171.225
+apex.go.sonobi.com        iad-2-apex.go.sonobi.com  A      Success   Answer      68      4 69.166.1.14
+apex.go.sonobi.com        iad-2-apex.go.sonobi.com  A      Success   Answer      68      4 69.166.1.15
+tlx.3lift.com             dualstack.exchange-pro... A      Success   Answer      15      4 3.211.202.22
+tlx.3lift.com             dualstack.exchange-pro... A      Success   Answer      15      4 54.174.249.7
+tlx.3lift.com             dualstack.exchange-pro... A      Success   Answer      15      4 52.3.153.146
+tlx.3lift.com             dualstack.exchange-pro... A      Success   Answer      15      4 52.2.165.236
+tlx.3lift.com             dualstack.exchange-pro... A      Success   Answer      15      4 52.0.191.126
+tlx.3lift.com             dualstack.exchange-pro... A      Success   Answer      15      4 34.200.193.244
+www.google.com            www.google.com            A      Success   Answer      25      4 172.217.172.4
+ap.lijit.com              vap.lijit.com             A      Success   Answer      96      4 23.92.190.69
+ap.lijit.com              vap.lijit.com             A      Success   Answer      96      4 63.251.114.136
+array802.prod.do.dsp.m... array802.prod.do.dsp.m... A      Success   Answer    2505      4 13.78.187.58
+github.githubassets.com   github.githubassets.com   A      Success   Answer     627      4 185.199.110.154
+github.githubassets.com   github.githubassets.com   A      Success   Answer     627      4 185.199.109.154
+github.githubassets.com   github.githubassets.com   A      Success   Answer     627      4 185.199.108.154
+github.githubassets.com   github.githubassets.com   A      Success   Answer     627      4 185.199.111.154
+Get-DnsClientCache : No se encontraron objetos MSFT_DNSClientCache cuya propiedad 'Type' sea igual a 'AAAA'. Compruebe 
+el valor de la propiedad e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ Get-DnsClientCache -Type A,AAAA
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (AAAA:Type) [Get-DnsClientCache], CimJobException
+    + FullyQualifiedErrorId : CmdletizationQuery_NotFound_Type,Get-DnsClientCache
+Get-DnsClientCache : No se encontraron objetos MSFT_DNSClientCache cuya propiedad 'Type' sea igual a 'AAAA'. Compruebe el valor de la propiedad e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ Get-DnsClientCache -Type A,AAAA
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (AAAA:Type) [Get-DnsClientCache], CimJobException
+    + FullyQualifiedErrorId : CmdletizationQuery_NotFound_Type,Get-DnsClientCache
+
+
+
+PS C:\Users\alvaro> dir C:\Windows\System32\*.exe | where {$_.Length -gt 5MB}
+
+
+    Directorio: C:\Windows\System32
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----    13/02/2020  10:11 a. m.      120407888 MRT.exe
+-a----     13/02/2020  9:57 a. m.        9929016 ntoskrnl.exe
+
+
+PS C:\Users\alvaro> Get-HotFix | where {$_.Description -eq "Security Update"}
+
+Source        Description      HotFixID      InstalledBy          InstalledOn
+------        -----------      --------      -----------          -----------
+DESKTOP-PJ... Security Update  KB4497727                          1/04/2019 12:00:00 a. m.
+DESKTOP-PJ... Security Update  KB4497932     NT AUTHORITY\SYSTEM  10/06/2019 12:00:00 a. m.
+DESKTOP-PJ... Security Update  KB4498523     NT AUTHORITY\SYSTEM  10/06/2019 12:00:00 a. m.
+DESKTOP-PJ... Security Update  KB4503308     NT AUTHORITY\SYSTEM  12/06/2019 12:00:00 a. m.
+DESKTOP-PJ... Security Update  KB4508433     NT AUTHORITY\SYSTEM  15/08/2019 12:00:00 a. m.
+DESKTOP-PJ... Security Update  KB4509096     NT AUTHORITY\SYSTEM  19/07/2019 12:00:00 a. m.
+DESKTOP-PJ... Security Update  KB4515383     NT AUTHORITY\SYSTEM  12/09/2019 12:00:00 a. m.
+DESKTOP-PJ... Security Update  KB4516115     NT AUTHORITY\SYSTEM  13/09/2019 12:00:00 a. m.
+DESKTOP-PJ... Security Update  KB4521863     NT AUTHORITY\SYSTEM  10/10/2019 12:00:00 a. m.
+DESKTOP-PJ... Security Update  KB4524569     NT AUTHORITY\SYSTEM  15/11/2019 12:00:00 a. m.
+DESKTOP-PJ... Security Update  KB4528759     NT AUTHORITY\SYSTEM  16/01/2020 12:00:00 a. m.
+DESKTOP-PJ... Security Update  KB4537759     NT AUTHORITY\SYSTEM  16/02/2020 12:00:00 a. m.
+DESKTOP-PJ... Security Update  KB4538674     NT AUTHORITY\SYSTEM  13/02/2020 12:00:00 a. m.
+
+
+PS C:\Users\alvaro> Get-HotFix | where {$_.InstalledBy -like "*System*" -and $_.Description -Like "Update"}
+
+Source        Description      HotFixID      InstalledBy          InstalledOn
+------        -----------      --------      -----------          -----------
+DESKTOP-PJ... Update           KB4534132     NT AUTHORITY\SYSTEM  16/02/2020 12:00:00 a. m.
+DESKTOP-PJ... Update           KB4532693     NT AUTHORITY\SYSTEM  16/02/2020 12:00:00 a. m.
+
+
+PS C:\Users\alvaro> Get-Process | where {$_.Name -like "*Conhost*" -or $_.Name -like "*Svchost*"}
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+    151      10     6700       5988              4804   0 conhost
+     86       5      948       3256               552   0 svchost
+    288      11     3732       7036               564   0 svchost
+   1371      24    13624      29544               984   0 svchost
+   1413      20     9096      15796              1104   0 svchost
+    288      11     2676       7412              1176   0 svchost
+    182       9     2028       6448              1220   0 svchost
+    129       8     1576       5392              1252   0 svchost
+    182      13     1860       6332              1360   0 svchost
+    166       9     1748       9116              1420   0 svchost
+    260      16     2488       9132              1452   0 svchost
+    173       9     1788       6324              1460   0 svchost
+    235      10     2228       6472              1472   0 svchost
+    397      18     6380      13320              1516   0 svchost
+    432      18     8776      22364       7,59   1612   2 svchost
+    224      13     2652      10140              1644   0 svchost
+    255      13     2544       9368              1652   0 svchost
+    157       9     2044      10064              1676   0 svchost
+    374      16     2504       8264              1696   0 svchost
+    340      12     2880       8964              1744   0 svchost
+    453      19     8268      17468              1756   0 svchost
+    177       7     1656       4980              1760   0 svchost
+    251      10     2192       7752              1772   0 svchost
+    417      14    16024      14860              1900   0 svchost
+    125       7     1288       4912              1932   0 svchost
+    149      27     5564       8576              1944   0 svchost
+    288      15     3984      18668              2028   0 svchost
+    385      16     4848      11588              2116   0 svchost
+    125       8     1444       5632              2124   0 svchost
+    274      13     3636       7940              2236   0 svchost
+    648      13     3136       8088              2296   0 svchost
+    210      10     6368      13800              2320   0 svchost
+    155      10     2008       7816              2340   0 svchost
+    237       7     1336       4840              2480   0 svchost
+    233      14   111460     112344              2488   0 svchost
+    173       9     1992       6564              2496   0 svchost
+    256      14     2912      10104       0,09   2548   2 svchost
+    183      12     2004       7564              2624   0 svchost
+    168       9     1748       6520              2692   0 svchost
+    171      10     1968       6880              2700   0 svchost
+    142      12     1820       5640              2736   0 svchost
+    374      16     5120      14560              2792   0 svchost
+    370      14     3256      11720              2832   0 svchost
+    224      12     2348       8728              2980   0 svchost
+    502      23     6284      15260              3156   0 svchost
+    261      16     2848      12160              3220   0 svchost
+    427      32    10128      16604              3376   0 svchost
+    186      10     1960       6308              3408   0 svchost
+    483      21     3656      11204              3640   0 svchost
+    545      24    15056      28156              3724   0 svchost
+    404      28     6452      13640              3748   0 svchost
+    393      21    18252      24260              3756   0 svchost
+    263      13     2692       6476              3812   0 svchost
+    398      18     7684      15396              3832   0 svchost
+    135       9     1616       4996              3912   0 svchost
+    182      10     2020       6848              4004   0 svchost
+    128       7     1272       4416              4012   0 svchost
+    423      20     5212      20196              4044   0 svchost
+    136       8     1636       4932              4232   0 svchost
+    206      12     2324       7372              4436   0 svchost
+    384      24     3420      10112              4532   0 svchost
+    448      27     5692      18684              4852   0 svchost
+    118       7     1268       5452              5840   0 svchost
+    246      16     2420       7148              6656   0 svchost
+    320      16     4352      18652              6756   0 svchost
+    337      17    14652      14540              7044   0 svchost
+    210      11     2416       7056              7144   0 svchost
+    231      13     2864       9968              7444   0 svchost
+    131       8     1520       6960              7772   0 svchost
+    511      25     8204      32696       1,55   7824   2 svchost
+    344      17     4088      20928       0,58   8736   2 svchost
+    329      13     3324       9024             10276   0 svchost
+    224      12     2804       9244             10424   0 svchost
+    199      10     2016       7996             10928   0 svchost
+    168       8     1636       6712             12504   0 svchost
+    755      72    26068      27856             15216   0 svchost
+    143       8     2820       8124             15420   0 svchost
+
+
+PS C:\Users\alvaro> Get-History
+
+  Id CommandLine
+  -- -----------
+   1 start-transcript
+   2 get-process | ft name,id,responding -Autosize -Wrap
+   3 get-process | ft name,id,@{n='VM (MB)';e={$_.VM / 1MB -as [int]}}, @{n='PM (MB)';e={$_.PM / 1MB -as [int]}}
+   4 Get-EventLog -List | ft @{n='NombreLog';e={$_.Log}}, @{n='Per-Retencion';e={$_.MinimumRetentionDays}}
+   5 Get-Service | sort status -Descending | ft -GroupBy status
+   6 dir -path "C:\" -attributes directory | fw -col 4
+   7 dir -path "C:\Windows\*.exe" | fl name,VersionInfo,@{n='Tamano';e={$_.Length}}
+   8 Import-Module NetAdapter
+   9 Get-NetAdapter | where {$_.Virtual -eq $false }
+  10 Get-NetAdapter | where {$_.Virtual -eq $false }
+  11 Import-Module DnsClient
+  12 Get-DnsClientCache -Type A,AAAA
+  13 dir C:\Windows\System32\*.exe | where {$_.Length -gt 5MB}
+  14 Get-HotFix | where {$_.Description -eq "Security Update"}
+  15 Get-HotFix | where {$_.InstalledBy -like "*System*" -and $_.Description -Like "Update"}
+  16 Get-Process | where {$_.Name -like "*Conhost*" -or $_.Name -like "*Svchost*"}
+
+
+PS C:\Users\alvaro> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20200310223237
+**********************
