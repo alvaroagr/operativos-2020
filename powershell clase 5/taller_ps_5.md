@@ -11,9 +11,9 @@
 5. Empleando cmdlets de CIM, y los resultados del ejercicio anterior, muestre los nombres de las aplicaciones antispyware instaladas en el sistema. También puede consultar si hay productos antivirus instalados en el sistema.
 
 ## RESPUESTAS
-1.	Se puede emplear la clase ```Win32_NetworkAdapterConfiguration``` para consultar la direccion IP de un adaptador de red. (Hallar metodo faltante)
+1.	Se puede emplear la clase ```Win32_NetworkAdapterConfiguration``` para consultar la direccion IP de un adaptador de red. Dicha clase posee el metodo ```ReleaseDHCPLease``` para liberar un prestamo de direccion DHCP.
 
-2.	Para desplegar una lista de parches con WMI, se usa el siguiente cmdlet:
+2.	Para desplegar una lista de parches, empleando WMI, se usa el siguiente cmdlet:
 	```Powershell
 	Get-WmiObject Win32_QuickFixEngineering
 	```
@@ -21,7 +21,7 @@
 	
 3.	Para generar una lista de servicios, que incluya su status actual, su modalidad de inicio, y las cuentas que emplean para hacer login, empleado WMI, se utiliza lo siguiente:
 	```Powershell
-	Get-WmiObject Win32_Service | select Name, Status, StartMode, CheckPoint, ??? | sort Name
+	Get-WmiObject Win32_Service | select Name, Status, StartMode, StartName | sort Name
 	```
 	
 4.	Para listar todas las clases del namespace SecurityCenter2, usando CIM, que tengan **product** como parte del nombre, se utiliza este cmdlet:
