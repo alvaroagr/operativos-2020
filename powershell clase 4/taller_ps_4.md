@@ -91,28 +91,36 @@
    dir -path "C:\Windows\*.exe" | fl name,VersionInfo,@{n='Tamano';e={$_.Length}}
    ```
    
-7. ```Powershell
+7. Para mostrar una lista de adaptadores no virtuales, se usa el siguiente cmdlet:
+   ```Powershell
    Import-Module NetAdapter
    Get-NetAdapter | where {$_.Virtual -eq $false }
    ```
    
-8. ```Powershell
+8. Para mostrar una lista de los registros ``A`` y ``AAAA`` que estén en el caché, se usa el siguiente cmdlet:
+   ```Powershell
    Import-DnsClient
    Get-DnsClientCache -Type A,AAAA
    ```
    
-9. ```Powershell
+9. Para generar una lista de todos los archivos ``.exe`` del directorio, se usa el siguiente cmdlet:
+   ```Powershell
    dir C:\Windows\System32\*.exe | where {$_.Length -gt 5MB}
    ```
    
-10. ```Powershell
+10. Para mostrar una lista de parches que sean actualizaciones de seguridad, se utiliza el siguiente cmdlet:
+    ```Powershell
     Get-HotFix | where {$_.Description -eq "Security Update"}
     ```
     
-11. ```Powershell
+11. Para mostrar una lista de parches que hayan sido instalados por el
+    usuario ``System``, que sean actualizaciones, se usa el siguiente cmdlet:
+    ```Powershell
     Get-HotFix | where {$_.InstalledBy -like "*System*" -and $_.Description -Like "Update"}
     ```
     
-12. ```Powershell
+12. Para generar una lista de todos los procesos que estén corriendo con el nombre
+    **Conhost** o **Svchost**, se usa el siguiente cmdlet:
+    ```Powershell
     Get-Process | where {$_.Name -like "*Conhost*" -or $_.Name -like "*Svchost*"}
     ```
