@@ -9,8 +9,19 @@ Este script permite realizar cinco acciones de Data Center en PowerShell.
 4. Mostrar la cantidad de memoria libre y de espacio swap utilizado en este instante.
 5. Mostrar el numero de conexiones de red activas en este instante.
 .EXAMPLE
-Insert example here.
-Here's an example
+./data-center.ps1
+Seleccione una funcionalidad: 3
+
+A continuacion coloca el nombre del FileSystem del que desea el archivo de mayor tamano. En Windows,
+se refiere a la letra de unidad. Puede ver cuales FileSystems estan disponibles usando la
+funcionalidad 2.
+
+Ingrese el NOMBRE del FileSystem del que quiere el archivo: c
+
+Nombre           : coldrain - 20180206 LIVE AT BUDOKAN.mp4
+Tamano (B)       : 3887282972
+Ruta/Trayectoria : C:\Users\alvaro\Videos\Live\coldrain - 20180206 LIVE AT BUDOKAN.mp4
+
 .LINK
 Alvaro A. Gomez Rey - http://github.com/alvaroagr
 Get-Process
@@ -41,39 +52,34 @@ process {
 		$input = Read-Host "Seleccione una funcionalidad"
 		switch($input){
 		'1'{
-			get-process | <# Obtenemos todos los procesos #>
-			sort CPU -Descending | <# Los ordenamos de mayor a menor uso de CPU #>
-			select @{n='Proceso';e={$_.ProcessName}}, @{n='CPU en Uso (s)';e={$_.CPU}} -First 5 | 
-			<# Seleccionamos los 5 con mayor uso de CPU, y seleccionamos nombre y uso de CPU #>
-			ft <# Formateamos el output como tabla #>
+			get-process | # Obtenemos todos los procesos
+			sort CPU -Descending | # Los ordenamos de mayor a menor uso de CPU
+			select @{n='Proceso';e={$_.ProcessName}},
+			       @{n='CPU en Uso (s)';e={$_.CPU}} -First 5 | 
+			# Seleccionamos los 5 con mayor uso de CPU, y seleccionamos nombre y uso de CPU
+			ft -Autosize # Formateamos el output como tabla
 		}
 		'2'{
-			Get-PSDrive | <# Obtenemos todos los discos en la sesion actual #>
+			Get-PSDrive | # Obtenemos todos los discos en la sesion actual
 			where {$_.Provider -like "*FileSystem*" -and $_.Free -ne $null} | 
-			<# Solo nos interesan aquellos discos que son FileSystems y tienen capacidad de almacenamiento. #>
+			# Solo nos interesan aquellos discos que son FileSystems y tienen capacidad de almacenamiento.
 			ft @{n="Nombre";e={$_.Name}},
 			   @{n="Direccion";e={$_.Root}},
 			   @{n="Tamano (B)";e={($_.Free + $_.Used)}},
-			   @{n="Espacio Libre (B)";e={$_.Free}} 
-			   <# Retorna tabla con Nombre, Direccion, Tamaño(Bytes) y Espacio Libre (Bytes) de cada FileSystem #>
+			   @{n="Espacio Libre (B)";e={$_.Free}} -Autosize
+			# Retorna tabla con Nombre, Direccion, Tamaño(Bytes) y Espacio Libre (Bytes) de cada FileSystem
 		}
 		'3'{
-			#missing code
-			
-			
-			
-			
-			Write-Host
-			<# $route = Read-Host "Ingrese el FileSystem del que desee obtener el archivo mas grande." #>
-			dir c:\users\alvaro\Videos -Attributes Archive -Recurse | 
+			$name = Read-Host "Ingrese el NOMBRE del FileSystem del que quiere el archivo (solo la letra)"
+			dir "$($name):\" -Attributes Archive -Recurse -EA 0 | 
 			sort Length -Descending | 
 			select @{n="Nombre";e={$_.Name}},
 			       @{n="Tamano (B)";e={$_.Length}},
-				   @{n="Ruta/Trayectoria";e={$_.FullName}} -First 5 | 
-			ft
+				   @{n="Ruta/Trayectoria";e={$_.FullName}} -First 1 | 
+			fl
 		}
 		'4'{
-			Get-CIMInstance Win32_OperatingSystem | 
+			Get-CIMInstance Win32_OperatingSystem | # Obtenemos la instancia del Sistema Opertativo Windows
 			select @{n="Memoria Fisica Libre (B)";e={$_.FreePhysicalMemory}}, 
 			       @{n="Memoria Fisica Libre (%)";e={($_.FreePhysicalMemory / $_.TotalVisibleMemorySize) * 100}},
 			       @{n="Memoria Virtual Libre (B)";e={$_.FreeVirtualMemory}},
@@ -81,14 +87,16 @@ process {
 			       @{n="Espacio Swap Ocupado (B)";e={$_.SizeStoredInPagingFiles}},
 				   @{n="Espacio Swap Ocupado (%)";e={($_.SizeStoredInPagingFiles / `
 				    ($_.SizeStoredInPagingFiles + $_.FreeSpaceInPagingFiles)) * 100}} | 
-			<# #>
+			<# Seleccionamos la Memoria Fisica y Virtual libre y calculamos su porcentaje con la total.
+			Tambien seleccionamos el espacio swap ocupado, y calculamos el porcentaje con la suma de este y
+			el espacio swap disponible. #>
 			fl
 		}
 		'5'{
-			Get-NetTCPConnection | <# Obtenemos las conexiones de red #>
-			where {$_.State -like "*Established*"} | <# Filtramos los que estan en estado "ESTABLISHED" #>
-			measure | <# Medimos la cantidad #>
-			fl @{n="Conexiones de Red Activas Actualmente";e={$_.Count}} <# Retornamos el numero de conexiones #>
+			Get-NetTCPConnection | # Obtenemos las conexiones de red
+			where {$_.State -like "*Established*"} | # Filtramos los que estan en estado "ESTABLISHED"
+			measure | # Se toman medidas de los resultados
+			fl @{n="Conexiones de Red Activas Actualmente";e={$_.Count}} # Retornamos el conteo de conexiones
 		}
 		'q'{
 			return
