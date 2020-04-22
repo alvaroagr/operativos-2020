@@ -10,17 +10,62 @@ Este script permite realizar cinco acciones de Data Center en PowerShell.
 5. Mostrar el numero de conexiones de red activas en este instante.
 .EXAMPLE
 ./data-center.ps1
+Seleccione una funcionalidad: 1
+
+Se le retornara una tabla con los nombres de los procesos y el CPU que tienen en uso.
+
+Proceso  CPU en Uso (s)
+-------  --------------
+chrome         20,46875
+chrome               17
+Code          13,578125
+Code           8,328125
+explorer        8,21875
+
+.EXAMPLE
+./data-center.ps1
+Seleccione una funcionalidad: 2
+
+Se le retornara una tabla con los nombres, direcciones, tamaño y espacio libre en bytes de los FileSystems conectados a la maquina.
+
+Nombre Direccion   Tamano (B) Espacio Libre (B)
+------ ---------   ---------- -----------------
+C      C:\       999526756352      514433298432
+
+.EXAMPLE
+./data-center.ps1
 Seleccione una funcionalidad: 3
 
 A continuacion coloca el nombre del FileSystem del que desea el archivo de mayor tamano. En Windows,
 se refiere a la letra de unidad. Puede ver cuales FileSystems estan disponibles usando la
-funcionalidad 2.
+funcionalidad 2. Retornara el archivo mas grande que encuentre dentro del FileSystem especificado.
 
 Ingrese el NOMBRE del FileSystem del que quiere el archivo: c
 
 Nombre           : coldrain - 20180206 LIVE AT BUDOKAN.mp4
 Tamano (B)       : 3887282972
 Ruta/Trayectoria : C:\Users\alvaro\Videos\Live\coldrain - 20180206 LIVE AT BUDOKAN.mp4
+
+.EXAMPLE
+./data-center.ps1
+Seleccione una funcionalidad: 4
+
+Se le va a mostrar en lista la cantidad de memoria libre (fisica y virtual), asi como la cantidad de espacio swap en uso. Las cifras seran tanto en bytes como en porcentaje.
+
+Memoria Fisica Libre (B)  : 3234428
+Memoria Fisica Libre (%)  : 39,1098641033467
+Memoria Virtual Libre (B) : 14148548
+Memoria Virtual Libre (%) : 69,5062379284996
+Espacio Swap Ocupado (B)  : 12085688
+Espacio Swap Ocupado (%)  : 50,3078406498179
+
+.EXAMPLE
+./data-center.ps1
+Seleccione una funcionalidad: 5
+
+Se le va a mostrar cuantas conexiones de red activas hay en este momento.
+
+Conexiones de Red Activas Actualmente : 31
 
 .LINK
 Alvaro A. Gomez Rey - http://github.com/alvaroagr
