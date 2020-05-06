@@ -79,22 +79,22 @@ Get-NetTCPConnection
 param()
 process {
 	$input = 'q'
-	Write-Host 
-		"|------------------------------------------------------------------------------------------------------|"
-        "| DATA CENTER TOOLS (PowerShell)                                                                       |"
-		"|     V1.0                                                                                             |"
-		"|     Made by Alvaro A. Gomez Rey                                                                      |"
-		"|------------------------------------------------------------------------------------------------------|"
     do{
 		Write-Host 
-		    "1: Ingrese '1' para desplegar los cinco (5) procesos que mas CPU estan consumiendo en este instante."
-            "2: Ingrese '2' para desplegar los FileSystems (o discos) conectados a la maquina."
-            "3: Ingrese '3' para mostrar el nombre y el tamano del archivo mas grande almacenado en un"
-			"   FileSystem de su eleccion."
-            "4: Ingrese '4' para mostrar la cantidad de memoria libre y la cantidad de espacio swap en uso."
-            "5: Ingrese '5' para mostrar el numero de conexiones de red activas en este instante."
-            "Q: Ingrese 'Q' o utilice ^C para salir de la aplicacion."
-		$input = Read-Host "Seleccione una funcionalidad"
+		    "--------------------------------------------------------------------------------------------------------"
+			"  DATA CENTER TOOLS (PowerShell)"
+			"    V1.0"
+			"    Made by Alvaro A. Gomez Rey"
+			"--------------------------------------------------------------------------------------------------------"
+			"  1: Ingrese '1' para desplegar los cinco (5) procesos que mas CPU estan consumiendo en este instante."
+            "  2: Ingrese '2' para desplegar los FileSystems (o discos) conectados a la maquina."
+            "  3: Ingrese '3' para mostrar el nombre y el tamano del archivo mas grande almacenado en un"
+			"     FileSystem de su eleccion."
+            "  4: Ingrese '4' para mostrar la cantidad de memoria libre y la cantidad de espacio swap en uso."
+            "  5: Ingrese '5' para mostrar el numero de conexiones de red activas en este instante."
+            "  Q: Ingrese 'Q' o utilice ^C para salir de la aplicacion."
+			"--------------------------------------------------------------------------------------------------------"
+		$input = Read-Host "  Seleccione una funcionalidad"
 		switch($input){
 		'1'{
 			get-process | # Obtenemos todos los procesos
@@ -115,7 +115,7 @@ process {
 			# Retorna tabla con Nombre, Direccion, Tamaño(Bytes) y Espacio Libre (Bytes) de cada FileSystem
 		}
 		'3'{
-			$name = Read-Host "Ingrese el NOMBRE del FileSystem del que quiere el archivo (solo la letra)"
+			$name = Read-Host "  Ingrese el NOMBRE del FileSystem del que quiere el archivo (solo la letra)"
 			dir "$($name):\" -Attributes Archive -Recurse -EA 0 | 
 			sort Length -Descending | 
 			select @{n="Nombre";e={$_.Name}},
@@ -152,6 +152,4 @@ process {
 	}
 	}
 	until($input -eq 'q')
-}
-end {
 }
